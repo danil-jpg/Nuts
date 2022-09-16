@@ -1,0 +1,254 @@
+.mainPage {
+  overflow: hidden;
+}
+
+.header {
+  width: 100%;
+}
+
+.header__top-wrapper {
+  background: rgba(245, 245, 245, 0.5);
+  width: 100%;
+}
+.header__top {
+  max-width: 1285px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+.header__socials-wrapper {
+  margin-top: -7px;
+  margin-left: -4px;
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__social {
+}
+.header__top-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: rem(14);
+  line-height: lh(17, 14);
+  color: #337d5a;
+  text-align: center;
+  margin-left: 25px;
+  letter-spacing: initial;
+  margin-top: 11px;
+}
+.header__top-right {
+  padding-left: 22px;
+  display: flex;
+  align-items: center;
+  margin-top: -4px;
+  width: 100%;
+  justify-content: flex-start;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: rem(13);
+  line-height: lh(15, 13);
+  letter-spacing: 0.02em;
+
+  color: #000000;
+  p {
+    position: relative;
+    transition: 0.3s;
+  }
+  p:hover:after {
+    content: "";
+    width: 1px;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid #93b474;
+    transition: 0.3s;
+  }
+}
+.header__autorize {
+  margin-right: 7px;
+}
+.header__enter-wrapper {
+  display: flex;
+  align-items: center;
+}
+.header__enter {
+}
+.header__reg {
+  margin-left: 27px;
+}
+.header__lang {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transform: translate(48px);
+  width: 30px;
+}
+
+.header__center {
+  max-width: 1285px;
+  margin: 0 auto;
+  display: flex;
+}
+.header__logo-wrapper {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  justify-content: space-between;
+  transform: translate(0px, 9px);
+}
+.header__logo {
+  transform: translate(-3px, -3px);
+}
+.header__logo-text {
+  flex-basis: 136px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: rem(15);
+  line-height: lh(18, 15);
+  letter-spacing: 0.02em;
+  color: #1a2f3f;
+}
+.header__center-socials {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 114px;
+  margin-left: 326px;
+}
+.header__center-social {
+}
+.header__phones {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: rem(13);
+  margin-left: 31px;
+  line-height: 0;
+  padding-top: 13px;
+  color: #8a8a8a;
+}
+.header__phone-1 {
+  margin-bottom: 21px;
+  span {
+    color: #337d5a;
+  }
+}
+.header__phone-2 {
+  span {
+    color: #337d5a;
+  }
+}
+.header__btn-info-wrapper {
+  padding-top: 16px;
+  margin-left: 93px;
+  display: flex;
+  flex-direction: row;
+}
+.green-btn {
+  width: 148px;
+  height: 42px;
+  background: #337d5a;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: rem(13);
+  line-height: lh(15, 13);
+  letter-spacing: 0em;
+  color: #ffffff;
+  border: none;
+}
+.header__btn {
+}
+.header__btn-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: rem(12);
+  letter-spacing: 0.02em;
+  color: #8a8a8a;
+  width: 166px;
+  line-height: 1;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.header__basket {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(38px, 3px);
+}
+
+.header__bottom-wrapper {
+  width: 100%;
+  position: relative;
+
+  display: inline-block;
+  margin-top: 14px;
+  padding-top: 9px;
+}
+
+.header__bottom-wrapper::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+.header__bottom {
+  max-width: 1206px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.header__link {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: rem(15);
+  line-height: lh(18, 15);
+  letter-spacing: 0.02em;
+  position: relative;
+  color: #1a2f3f;
+}
+
+.header__link:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  width: 120%;
+  left: -10%;
+  border-bottom: 2px solid #337d5a;
+}
+
+.header__link:nth-of-type(1) {
+  transform: translate(1px);
+}
+
+.header__link:nth-of-type(2) {
+  transform: translate(0px);
+}
+
+.header__link:nth-of-type(3) {
+  transform: translate(-1px);
+}
+
+.header__link:nth-of-type(4) {
+  transform: translate(0px);
+  letter-spacing: 0.01em;
+}
+
+.header__link:nth-of-type(5) {
+  transform: translate(3px);
+}
+
+// Small pc orientation
+@media screen and (max-width: 1350px) {
+}

@@ -1,9 +1,13 @@
 .mainPage {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .header {
   width: 100%;
+}
+
+.header__mobile {
+  display: none;
 }
 
 .header__top-wrapper {
@@ -251,4 +255,240 @@
 
 // Small pc orientation
 @media screen and (max-width: 1350px) {
+  .header__top {
+    max-width: 912px;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+
+  .header__lang {
+    transform: none;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header__lang-name {
+    img {
+      margin-left: 2px;
+    }
+  }
+
+  .header__center {
+    max-width: 912px;
+  }
+
+  .header__center-socials {
+    width: 103px;
+    margin-left: 50px;
+  }
+
+  .header__phones {
+    margin-left: 31px;
+  }
+
+  .header__btn-info-wrapper {
+    margin-left: 43px;
+  }
+  .header__basket {
+    transform: translate(3px, 3px);
+  }
+
+  .header__bottom {
+    max-width: 912px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .header__top {
+    max-width: 760px;
+  }
+  .header__center {
+    max-width: 760px;
+    justify-content: center;
+  }
+
+  .header__btn-text {
+    display: none;
+  }
+
+  .header__basket {
+    transform: translate(25px, 3px);
+  }
+
+  .header__bottom {
+    max-width: 760px;
+  }
+
+  .header__link {
+    font-size: 0.8375rem;
+  }
+}
+
+@media screen and (max-width: 784px) {
+  .header__top {
+    max-width: 550px;
+  }
+
+  .header__phones {
+    display: none;
+  }
+
+  .header__basket {
+    transform: translate(5px, 3px);
+  }
+
+  .header__bottom {
+    max-width: 550px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+  }
+
+  .header__link {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header-before-mobile {
+    display: none;
+  }
+
+  .header__mobile {
+    display: block;
+    width: 100%;
+  }
+  .header__top_mobile {
+    position: relative;
+    max-width: 100%;
+    display: flex;
+  }
+  .header__phone-mobile {
+    align-items: center;
+    display: flex;
+    flex-basis: 33.333%;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: rem(12);
+    line-height: lh(15, 12);
+    color: black;
+    margin-left: 12px;
+    flex-grow: 2;
+    margin-top: -1px;
+    p {
+      margin-left: 6px;
+    }
+    span {
+      color: #337d5a;
+    }
+  }
+  .header__top-text_mobile {
+    display: flex;
+    flex-basis: 33.333%;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 600;
+    font-size: rem(13);
+    line-height: lh(15, 13);
+    flex-grow: 1;
+    letter-spacing: 0.01em;
+    margin-left: 1px;
+    margin-top: 12px;
+    color: #337d5a;
+    background: none;
+    border: none;
+    padding: 0;
+    position: relative;
+  }
+
+  .header__top-text_mobile:hover::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 77%;
+    height: 1px;
+    background-color: #337d5a;
+  }
+  .header__lang_mobile {
+    height: 38px;
+    border: 1px solid #93b474;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1px;
+    width: 51px;
+
+    .header__lang-name_mobile {
+      margin-left: 1px;
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 15px;
+      letter-spacing: 0.02em;
+      color: #000000;
+    }
+    .header__lang-arrow {
+      transform: translate(3px, 1px);
+    }
+  }
+
+  .header__top-text_mobile {
+  }
+
+  .header__center_mobile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    width: 93.5%;
+    margin: 0 auto;
+  }
+  .burger-trigger {
+    flex-basis: 33.333%;
+    margin-left: auto;
+  }
+  .header__logo_mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 800;
+    font-size: rem(11);
+    line-height: lh(13, 11);
+    text-align: center;
+    letter-spacing: 0.02em;
+    flex-basis: 33.333%;
+    transform: translate(0, 10px);
+    color: #1a2f3f;
+
+    img {
+      width: 29px;
+      height: 28px;
+    }
+  }
+  .logo_mobile {
+  }
+  .header__logo_text {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 800;
+    font-size: rem(11);
+    line-height: lh(13, 11);
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #1a2f3f;
+    transform: translate(2px, -5px);
+  }
+  .header__bag-mobile {
+    flex-basis: 33.333%;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 7px;
+    transform: translate(2px, 0);
+    padding-left: -4px;
+  }
 }

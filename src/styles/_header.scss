@@ -5,7 +5,9 @@
 .header {
   width: 100%;
 }
-
+.burger-menu {
+  display: none;
+}
 .header__mobile {
   display: none;
 }
@@ -347,9 +349,21 @@
   .header__link {
     text-align: center;
   }
+
+  .header__link:nth-of-type(1),
+  .header__link:nth-of-type(2),
+  .header__link:nth-of-type(3),
+  .header__link:nth-of-type(4),
+  .header__link:nth-of-type(5),
+  .header__link:nth-of-type(6) {
+    transform: translate(0px);
+  }
 }
 
 @media screen and (max-width: 576px) {
+  .header {
+    position: relative;
+  }
   .header-before-mobile {
     display: none;
   }
@@ -359,6 +373,7 @@
     width: 100%;
   }
   .header__top_mobile {
+    background: #fafafa;
     position: relative;
     max-width: 100%;
     display: flex;
@@ -490,5 +505,202 @@
     padding-bottom: 7px;
     transform: translate(2px, 0);
     padding-left: -4px;
+  }
+
+  .burger-menu__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .burger-menu__logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 11px;
+    margin-top: 3px;
+    flex-basis: 50%;
+    .logo_mobile {
+      width: 34px;
+      height: 33px;
+      transform: translate(0, -7px);
+    }
+
+    .header__logo_text {
+      width: 134px;
+      text-align: left;
+      margin-top: 9px;
+      margin-left: 6px;
+      font-size: rem(12);
+      line-height: lh(14, 12);
+    }
+  }
+
+  .burger-menu__close {
+    display: flex;
+    align-items: center;
+    transform: translate(-11px, 3px);
+  }
+
+  .burger-menu__center {
+    background: #fafafa;
+    display: flex;
+    height: 42px;
+    margin-top: 6px;
+  }
+
+  .header__enter-wrapper {
+    margin-left: 10px;
+    margin-top: 0px;
+    img {
+      margin-right: 6px;
+      width: 13px;
+      height: 13px;
+    }
+
+    .header__enter {
+      position: relative;
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 500;
+      font-size: rem(14);
+      line-height: lh(16, 14);
+      letter-spacing: 0.02em;
+      color: #323232;
+    }
+  }
+
+  .header__reg {
+    position: relative;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 500;
+    font-size: rem(14);
+    line-height: lh(16, 14);
+    letter-spacing: 0.02em;
+    color: #323232;
+  }
+
+  .header__socials-wrapper {
+    margin-top: 1px;
+    display: flex;
+    margin-left: auto;
+    transform: translate(-20px);
+    img:first-of-type {
+      width: 15px;
+      height: 15px;
+      transform: translate(-1px);
+    }
+
+    img:nth-of-type(2) {
+      width: 15px;
+      height: 15px;
+      transform: translate(3px);
+    }
+
+    img:nth-of-type(3) {
+      width: 18px;
+      height: 18px;
+      transform: translate(9px);
+    }
+  }
+
+  .header__reg:hover:after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    border: 1px solid #93b474;
+  }
+
+  .header__enter:hover:after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    border: 1px solid #93b474;
+  }
+
+  .burger-menu__bottom {
+  }
+  .header__bottom {
+    display: block;
+  }
+  .header__link {
+    display: block;
+    width: 100%;
+    height: 47px;
+  }
+
+  .header__bottom {
+    max-width: 100%;
+    margin-top: 4px;
+    box-sizing: border-box;
+  }
+
+  .header__link {
+    margin: 0;
+    line-height: 0;
+    display: block;
+    width: 100%;
+    height: 47px;
+    text-align: left;
+    font-size: 15px;
+    margin-bottom: -1px;
+    transition: 0.3s;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    a {
+      margin-left: 12px;
+    }
+  }
+
+  .header__link:hover {
+    background: #337d5a;
+    color: #ffffff;
+    transition: 0.3s;
+  }
+
+  .header__link:hover:after {
+    content: "";
+    display: none;
+  }
+
+  .header__link:nth-of-type(1),
+  .header__link:nth-of-type(2),
+  .header__link:nth-of-type(3),
+  .header__link:nth-of-type(4),
+  .header__link:nth-of-type(5),
+  .header__link:nth-of-type(6) {
+    transform: translate(0px);
+  }
+
+  .burger-menu {
+    display: block;
+    opacity: 0;
+    z-index: -1;
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+  }
+
+  .burger-menu.active {
+    opacity: 1;
+    z-index: 1;
+    pointer-events: none;
+    transition: 0.3s;
+    pointer-events: all;
+  }
+
+  .header__mobile.disabled {
+    transition: 0.3s;
+    opacity: 0;
+    visibility: hidden;
   }
 }

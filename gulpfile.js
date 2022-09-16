@@ -124,7 +124,6 @@ function styles() {
           cascade: false,
         })
       )
-      // .pipe(gcmq())
       .pipe(cleanCss({ level: 2 }))
       .pipe(
         rename({
@@ -161,6 +160,7 @@ function scripts() {
 function watch() {
   browserSync.init({
     server: "docs/",
+    port: 3001,
   });
   gulp.watch(paths.componentsHtml.src, gulp.series(componentsHtml, pagesHtml));
   gulp.watch(paths.pagesHtml.src, pagesHtml);

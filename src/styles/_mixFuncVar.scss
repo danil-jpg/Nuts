@@ -1,0 +1,84 @@
+@use "sass:math";
+
+@mixin typographic(
+  $c: $textColor2,
+  $fs: 16,
+  $lh,
+  $ls,
+  $ff: "Montserrat",
+  $fw: 400,
+  $op: 1
+) {
+  color: $c;
+  font-size: calc($fs / 16 * 1em);
+  line-height: $lh/$fs;
+  letter-spacing: $ls;
+  font-family: $ff;
+  font-weight: $fw;
+  opacity: $op;
+}
+
+@mixin fs($fs: 16) {
+  font-size: calc($fs / 16 * 1em);
+}
+
+@mixin lh($lh: 24, $fs: 16) {
+  line-height: calc($lh/$fs);
+}
+
+@mixin fl($fs: 16, $lh: 24) {
+  font-size: calc($fs / 16 * 1em);
+  line-height: calc($lh/$fs);
+}
+
+@mixin vertical-center {
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@keyframes opacity-close {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes opacity-open {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@mixin text-shorten {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@function stripUnit($value) {
+  @return math.div($value, ($value * 0 + 1));
+}
+
+@function rem($pxValue) {
+  @return #{calc(stripUnit($pxValue) / stripUnit(16))}rem;
+}
+
+@function lh($lh, $fs) {
+  @return calc($lh/$fs);
+}
+
+@function per($elemWidth, $parentWidth) {
+  @return calc(($elemWidth/$parentWidth) * 100%);
+}

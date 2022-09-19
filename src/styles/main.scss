@@ -1,6 +1,11 @@
 @import "../../node_modules/normalize.css/normalize.css";
 @import "fonts";
 @import "mixFuncVar";
+@import "../../node_modules/swiper/swiper-bundle.css";
 @import "reset";
 @import "header";
 @import "mainPage";
+
+html {
+  //   overflow: hidden;
+}

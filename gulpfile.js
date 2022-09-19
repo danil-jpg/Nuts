@@ -43,9 +43,9 @@ const paths = {
     src: "src/img/**/*",
     dest: "docs/img/",
   },
-  imagesRaw: {
-    src: "src/imgRaw/**/*",
-    dest: "docs/imgRaw/",
+  videos: {
+    src: "src/video/**/*",
+    dest: "docs/video/",
   },
   fonts: {
     src: "src/fonts/*",
@@ -185,13 +185,13 @@ function img() {
     .pipe(gulp.dest(paths.images.dest));
 }
 
-function imgRaw() {
-  return gulp.src(paths.imagesRaw.src).pipe(gulp.dest(paths.imagesRaw.dest));
+function video() {
+  return gulp.src(paths.videos.src).pipe(gulp.dest(paths.videos.dest));
 }
 
 const build = gulp.series(
   clean,
-  gulp.parallel(pagesHtml, componentsHtml, styles, scripts, img, imgRaw, fonts),
+  gulp.parallel(pagesHtml, componentsHtml, styles, scripts, img, video, fonts),
   watch
 );
 

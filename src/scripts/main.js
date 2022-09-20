@@ -17,4 +17,10 @@ window.addEventListener("DOMContentLoaded", () => {
     },
     modules: [Navigation, Pagination],
   });
+
+  const prodSliders = document.querySelectorAll(
+    ".production__card .swiper-production"
+  );
+
+  console.log(prodSliders);
 });

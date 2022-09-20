@@ -94,9 +94,11 @@
 .production__cards-wrapper {
   width: 1290px;
   display: flex;
-  justify-content: flex-start;
   margin: 0 auto;
   margin-top: 62px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 48px;
 }
 .production__card {
   width: 410px;
@@ -104,6 +106,30 @@
   box-sizing: border-box;
   min-width: 0;
   border: 1px solid rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+.production__card.discont::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  background-image: url(../img/mainPage/discont.svg);
+  top: 18.5px;
+  width: 85px;
+  height: 32px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.production__card.newThing::before {
+  content: "";
+  position: absolute;
+  left: -2px;
+  background-image: url(../img/mainPage/new-thing.webp);
+  top: 18.5px;
+  width: 85px;
+  height: 32px;
+  z-index: 2;
+  pointer-events: none;
 }
 .production__card:hover {
   outline: 1.5px solid #93b474;
@@ -239,11 +265,11 @@
   img {
     width: 18px;
     height: 18px;
-    transform: translate(-2px);
+    transform: translate(-2px, 7px);
   }
 }
 .production__weight-text-wrapper {
-  margin-top: -10px;
+  margin-top: -2px;
 }
 .production__weight {
   font-family: "Montserrat";
@@ -262,22 +288,30 @@
   line-height: lh(17, 14);
   color: #337d5a;
   line-height: 0;
-  margin-top: 17px;
   font-size: rem(14);
   letter-spacing: 0.01em;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
+}
+
+.production__weight-num_r {
   transform: translate(0, -15px);
+  margin-top: 17px;
+  font-weight: 600;
+
+  transform: translate(-1px, -10px);
 }
 .production__characteristic_right {
   display: flex;
   flex-direction: row;
 
+  transform: translate(2px);
+
   justify-content: space-between;
   align-items: center;
   img {
-    transform: translate(-46px, -22px);
+    transform: translate(-46px, -15px);
   }
 }
 .production__type-text-wrapper {
@@ -298,6 +332,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+}
+
+.production__bottom::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  width: 100%;
+  top: -12px;
 }
 .production__price-wrapper {
   font-family: "Montserrat";
@@ -309,16 +354,96 @@
   color: #1a2f3f;
 }
 .production__price-text {
-  color: #337d5a;
+  color: #1a2f3f;
+  margin-left: -2px;
+  margin-top: 10px;
 }
 .production__price-num {
+  color: #337d5a;
+  font-size: 20px;
+  margin-left: 4px;
 }
-.production__price-num-crossed {
+.production__price-val_1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: rem(15);
+  line-height: lh(18, 15);
+  letter-spacing: 0.01em;
+  color: #337d5a;
+  margin-left: -2px;
+}
+.production__card.discont {
+  .production__price-val_1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: rem(15);
+    line-height: lh(18, 15);
+    letter-spacing: 0.01em;
+    color: #337d5a;
+    margin-left: -2px;
+  }
+  .production__price-num-crossed {
+    font-size: 16px;
+    margin-left: 0px;
+    position: relative;
+    top: 2px;
+    color: #8a8a8a;
+    text-decoration: line-through;
+  }
+  .production__price-text {
+    display: none;
+  }
+  .production__price-text_discont {
+    display: block;
+  }
+  .production__price-val_1 {
+    margin-left: 4px;
+  }
+  .production__price-num {
+    top: 0px;
+    position: relative;
+    left: 0px;
+  }
+}
+
+.production__price-text_discont {
+  display: none;
+}
+
+.production__price-val_2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: rem(13);
+  letter-spacing: 0.01em;
   color: #8a8a8a;
-  text-decoration: line-through;
+  position: relative;
+  top: 0px;
+  left: -3px;
+}
+.production__price-num {
+  top: 2px;
+  position: relative;
+  left: -3px;
+}
+
+.production__price-val_1 {
+  margin-left: 4px;
+
+  top: -1px;
+  position: relative;
+  left: -5px;
+}
+.production__price-val_3 {
+  margin-left: 4px;
+  position: relative;
+  top: 2px;
 }
 
 .production__btn {
+  margin-right: 22px;
   button {
     width: 124px;
     height: 41px;
@@ -334,7 +459,6 @@
     color: #ffffff;
   }
 }
-
-.mainPage-top {
+.production__bottom .mainPage-top {
   transform: translate(-2px);
 }

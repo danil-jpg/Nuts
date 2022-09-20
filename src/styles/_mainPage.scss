@@ -167,6 +167,7 @@
     object-fit: contain;
     width: 23px;
     height: 23px;
+    visibility: hidden;
   }
 
   .right-arrow {
@@ -179,6 +180,7 @@
     cursor: pointer;
     align-items: center;
     object-fit: contain;
+    visibility: hidden;
   }
 }
 
@@ -198,13 +200,24 @@
     opacity: 1;
     transition: 0.2s;
   }
+  .swiper-button-next,
+  .swiper-button-prev {
+    transition: 0.2s;
+    visibility: visible;
+  }
+  * {
+    z-index: 1;
+    opacity: 1;
+    transition: 0.2s;
+  }
 }
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  opacity: 1;
   transition: 0.2s;
+  visibility: visible;
 }
+
 .production__center-descr {
   padding-left: 23px;
   width: 100%;

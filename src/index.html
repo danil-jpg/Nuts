@@ -264,27 +264,9 @@
                 </button>
             </div>
             <div class="information__column">
-                <div class="swiper swiper-video">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="video__wrapper">
-                                <video controls="true" src="./video/Видео презентация саженцы грецкий орех привитой.mp4"></video>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="video__wrapper">
-                                <video controls="true" src="./video/Видео презентация саженцы грецкий орех привитой.mp4"></video>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="video__wrapper">
-                                <video controls="true" src="./video/Видео презентация саженцы грецкий орех привитой.mp4"></video>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-button-vid-prev"></div>
-                    <div class="swiper-button-vid-next"></div>
-                </div>
+                @@include("smallComponents/videoComponent.html",{
+                    "url" : "./video/Видео презентация саженцы грецкий орех привитой.mp4"
+                })
             </div>
         </div>
     </article>

@@ -156,32 +156,6 @@
     align-items: center;
     transition: 0.2s;
   }
-
-  .left-arrow {
-    position: absolute;
-    left: 15px;
-    top: 58%;
-    transition: 0.2s;
-    cursor: pointer;
-    align-items: center;
-    object-fit: contain;
-    width: 23px;
-    height: 23px;
-    visibility: hidden;
-  }
-
-  .right-arrow {
-    width: 23px;
-    height: 23px;
-    position: absolute;
-    right: 15px;
-    top: 58%;
-    transition: 0.2s;
-    cursor: pointer;
-    align-items: center;
-    object-fit: contain;
-    visibility: hidden;
-  }
 }
 
 .swiper-button-prev::after,
@@ -212,11 +186,45 @@
   }
 }
 
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  transition: 0.2s;
-  visibility: visible;
+.swiper-production {
+  position: relative;
 }
+.swiper-button-next,
+.swiper-button-prev {
+  width: 23px;
+  height: 23px;
+}
+
+.right-arrow {
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  right: 15px;
+  top: 58%;
+  transition: 0.2s;
+  cursor: pointer;
+  align-items: center;
+  object-fit: contain;
+  opacity: 1;
+}
+.left-arrow {
+  position: absolute;
+  left: 15px;
+  top: 58%;
+  transition: 0.2s;
+  cursor: pointer;
+  align-items: center;
+  object-fit: contain;
+  width: 23px;
+  height: 23px;
+  opacity: 1;
+}
+
+// .left-arrow.active,
+// .right-arrow.active {
+//   transition: 0.2s;
+//   opacity: 1;
+// }
 
 .production__center-descr {
   padding-left: 23px;

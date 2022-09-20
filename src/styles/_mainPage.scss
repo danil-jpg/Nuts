@@ -581,6 +581,7 @@
 
 .swiper-video {
   margin-top: 100px;
+  position: relative;
   .swiper-wrapper {
     width: 700px;
     height: 472px;
@@ -599,5 +600,33 @@
     height: 100%;
     top: 0;
     left: 0;
+  }
+
+  .swiper-button-vid-prev {
+    background-color: #337d5a;
+    background-image: url(../img/mainPage/right-arrow-white.svg);
+    transform: rotate(180deg);
+    width: 70.5px;
+    height: 59px;
+    background-position: center 10px;
+    position: absolute;
+    left: 1px;
+    bottom: 0;
+    z-index: 1;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .swiper-button-vid-next {
+    background-color: #337d5a;
+    background-image: url(../img/mainPage/right-arrow-white.svg);
+    background-repeat: no-repeat;
+    width: 70.5px;
+    height: 59px;
+    background-position: center center;
+    position: absolute;
+    left: 70.5px;
+    bottom: 0;
+    z-index: 1;
+    cursor: pointer;
   }
 }

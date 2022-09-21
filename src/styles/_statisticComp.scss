@@ -1,0 +1,121 @@
+.statistic {
+  width: 1290px;
+  margin: 0 auto;
+}
+.statistic-mainPage {
+  margin-top: 60px;
+}
+.statistic__content {
+  padding-left: 80px;
+  justify-content: space-between;
+  display: flex;
+}
+.statistic__block {
+  width: 200px;
+}
+.statsistic__item_top {
+  position: relative;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: rem(72);
+  line-height: lh(88, 72);
+  letter-spacing: 0.01em;
+
+  color: #1a2f3f;
+  span {
+  }
+}
+.statistic__item_bottom {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: rem(18);
+  line-height: lh(21, 18);
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-top: 5px;
+  color: #1a2f3f;
+}
+
+.statsistic__item_top::after {
+  content: "Га";
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 900;
+  font-size: rem(18);
+  line-height: lh(21, 18);
+  letter-spacing: 0.05em;
+  vertical-align: text-top;
+  color: #1a2f3f;
+  top: 15px;
+  position: absolute;
+}
+
+.statistic__block:first-of-type {
+  .statistic__item_bottom {
+    width: 50%;
+    margin-top: 5px;
+    margin-left: 22px;
+    letter-spacing: -0.02em;
+  }
+
+  .statsistic__item_top::after {
+    content: "Га";
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 900;
+    font-size: rem(18);
+    line-height: lh(21, 18);
+    letter-spacing: 0.05em;
+    vertical-align: text-top;
+    color: #1a2f3f;
+    top: 15px;
+    right: 29px;
+    position: absolute;
+  }
+}
+
+.statistic__block:nth-of-type(2) {
+  width: 112px;
+
+  .statsistic__item_top {
+    margin-left: 18px;
+  }
+
+  .statistic__item_bottom {
+    margin-left: -39px;
+  }
+}
+
+.statistic__block:nth-of-type(3) {
+  .statsistic__item_top {
+    text-align: center;
+    padding-right: 28px;
+  }
+
+  .statistic__item_bottom {
+    width: 318px;
+    margin-left: -71px;
+  }
+}
+
+.statistic__block:nth-of-type(4) {
+  .statistic__item_bottom {
+    transform: translate(-41px);
+  }
+  .statsistic__item_top::after {
+    content: "%";
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 900;
+    font-size: rem(18);
+    line-height: lh(21, 18);
+    letter-spacing: 0.05em;
+    vertical-align: text-top;
+    color: #1a2f3f;
+    top: 15px;
+    right: 83px;
+    position: absolute;
+  }
+}

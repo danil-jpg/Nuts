@@ -19,7 +19,7 @@
   margin-top: 195px;
 }
 .top__title {
-  font-family: "Raleway";
+  font-family: "RalewayL";
   font-style: normal;
   font-weight: 800;
   font-size: rem(62);
@@ -28,7 +28,7 @@
   color: #ffffff;
 }
 .top__descr {
-  font-family: "Raleway";
+  font-family: "RalewayL";
   font-style: normal;
   font-weight: 600;
   font-size: rem(25);
@@ -69,7 +69,7 @@
   text-align: center;
 }
 .center-text_title {
-  font-family: "Raleway";
+  font-family: "RalewayL";
   font-style: normal;
   font-weight: 800;
   font-size: rem(45);
@@ -80,7 +80,7 @@
   letter-spacing: 0.01em;
 }
 .center-text_descr {
-  font-family: "Raleway";
+  font-family: "RalewayL";
   font-style: normal;
   font-weight: 500;
   font-size: rem(18);
@@ -232,7 +232,7 @@
   box-sizing: border-box;
 }
 .production__card-name {
-  font-family: "Raleway";
+  font-family: "RalewayL";
   font-style: normal;
   font-weight: 700;
   font-size: rem(18);
@@ -246,7 +246,7 @@
   color: #1a2f3f;
 }
 .production__ard {
-  font-family: "Montserrat";
+  font-family: "MontserratL";
   font-style: normal;
   font-weight: 500;
   font-size: rem(15);
@@ -258,7 +258,7 @@
   margin-top: -10px;
 }
 .production__descr {
-  font-family: "Raleway";
+  font-family: "RalewayL";
   font-style: normal;
   font-weight: 600;
   font-size: rem(16);
@@ -293,7 +293,7 @@
   margin-top: -2px;
 }
 .production__weight {
-  font-family: "Montserrat";
+  font-family: "MontserratL";
   font-style: normal;
   font-weight: 500;
   font-size: rem(14);
@@ -311,7 +311,7 @@
   line-height: 0;
   font-size: rem(14);
   letter-spacing: 0.01em;
-  font-family: "Montserrat";
+  font-family: "MontserratL";
   font-style: normal;
   font-weight: 500;
 }
@@ -336,7 +336,7 @@
   }
 }
 .production__type-text-wrapper {
-  font-family: "Montserrat";
+  font-family: "MontserratL";
   font-style: normal;
   font-weight: 500;
   font-size: rem(14);
@@ -366,7 +366,7 @@
   top: -12px;
 }
 .production__price-wrapper {
-  font-family: "Montserrat";
+  font-family: "MontserratL";
   font-style: normal;
   font-weight: 600;
   font-size: rem(15);
@@ -385,7 +385,7 @@
   margin-left: 4px;
 }
 .production__price-val_1 {
-  font-family: "Montserrat";
+  font-family: "MontserratL";
   font-style: normal;
   font-weight: 600;
   font-size: rem(15);
@@ -396,7 +396,7 @@
 }
 .production__card.discont {
   .production__price-val_1 {
-    font-family: "Montserrat";
+    font-family: "MontserratL";
     font-style: normal;
     font-weight: 600;
     font-size: rem(15);
@@ -434,7 +434,7 @@
 }
 
 .production__price-val_2 {
-  font-family: "Montserrat";
+  font-family: "MontserratL";
   font-style: normal;
   font-weight: 500;
   font-size: rem(13);
@@ -470,7 +470,7 @@
     height: 41px;
     background: #337d5a;
     border: 1px solid #337d5a;
-    font-family: "Raleway";
+    font-family: "RalewayL";
     font-style: normal;
     font-weight: 700;
     font-size: rem(14);
@@ -488,7 +488,7 @@
   width: 200px;
   height: 52px;
   border: 2px solid #337d5a;
-  font-family: "Raleway";
+  font-family: "RalewayL";
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
@@ -501,7 +501,7 @@
   margin-top: 71px;
 }
 .article-title {
-  font-family: "Raleway";
+  font-family: "RalewayL";
   font-style: normal;
   font-weight: 800;
   font-size: rem(45);
@@ -510,7 +510,7 @@
   color: #1a2f3f;
 }
 .article-descr {
-  font-family: "Raleway";
+  font-family: "RalewayL";
   font-style: normal;
   font-weight: 600;
   font-size: rem(16);
@@ -563,7 +563,7 @@
   left: 315px;
   top: 2893px;
   border: 1.5px solid #337d5a;
-  font-family: "Raleway";
+  font-family: "RalewayL";
   font-style: normal;
   font-weight: 700;
   font-size: rem(14);
@@ -628,5 +628,127 @@
     bottom: 0;
     z-index: 1;
     cursor: pointer;
+  }
+}
+
+.statistic {
+  width: 1290px;
+  margin: 0 auto;
+}
+.statistic-mainPage {
+  margin-top: 60px;
+}
+.statistic__content {
+  padding-left: 80px;
+  justify-content: space-between;
+  display: flex;
+}
+.statistic__block {
+  width: 200px;
+}
+.statsistic__item_top {
+  position: relative;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.01em;
+
+  color: #1a2f3f;
+  span {
+  }
+}
+.statistic__item_bottom {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-top: 5px;
+  color: #1a2f3f;
+}
+
+.statsistic__item_top::after {
+  content: "Га";
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  vertical-align: text-top;
+  color: #1a2f3f;
+  top: 15px;
+  position: absolute;
+}
+
+.statistic__block:first-of-type {
+  .statistic__item_bottom {
+    width: 50%;
+    margin-top: 5px;
+    margin-left: 22px;
+    letter-spacing: -0.02em;
+  }
+
+  .statsistic__item_top::after {
+    content: "Га";
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    vertical-align: text-top;
+    color: #1a2f3f;
+    top: 15px;
+    right: 29px;
+    position: absolute;
+  }
+}
+
+.statistic__block:nth-of-type(2) {
+  width: 112px;
+
+  .statsistic__item_top {
+    margin-left: 18px;
+  }
+
+  .statistic__item_bottom {
+    margin-left: -39px;
+  }
+}
+
+.statistic__block:nth-of-type(3) {
+  .statsistic__item_top {
+    text-align: center;
+    padding-right: 28px;
+  }
+
+  .statistic__item_bottom {
+    width: 318px;
+    margin-left: -71px;
+  }
+}
+
+.statistic__block:nth-of-type(4) {
+  .statistic__item_bottom {
+    transform: translate(-41px);
+  }
+  .statsistic__item_top::after {
+    content: "%";
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    vertical-align: text-top;
+    color: #1a2f3f;
+    top: 15px;
+    right: 83px;
+    position: absolute;
   }
 }

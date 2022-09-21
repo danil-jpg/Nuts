@@ -745,7 +745,9 @@
 }
 .benefit__item:hover {
   transition: 0.3s;
+
   .benefit__hover-content {
+    padding-top: 45px;
     opacity: 0.95;
   }
 }
@@ -754,10 +756,11 @@
   opacity: 0;
   position: absolute;
   top: 0;
+  box-sizing: border-box;
   left: 0;
   background-color: #317856;
   width: 100%;
-  height: 95.5%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -791,4 +794,32 @@
   text-align: center;
   letter-spacing: 0.01em;
   color: #ffffff;
+}
+
+.eco {
+  width: 100vw;
+  height: 750px;
+}
+.mainPage-eco {
+  margin-top: 50px;
+  background-image: url(../img/mainPage/nuts-in-hands.webp);
+  background-repeat: no-repeat;
+}
+.eco__content {
+  width: per(600, 1920);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.eco__icon {
+}
+.goal__title {
+}
+.eco__title {
+}
+.eco__descr {
+}
+.gaol__proposal {
 }

@@ -334,18 +334,9 @@
             </div>
         </div>
     </section>
-    <section class="eco  mainPage-eco">
-        <div class="eco__content">
-            <img src="img/mainPage/eco.svg" alt="eco" class="eco__icon">
-            <p class="goal__title eco__title">
-                Эко продукция
-            </p>
-            <p class="eco__descr gaol__proposal">
-                Выращиваем каждое деревцо с любовью, на экологически 
-                чистой земле, без использования пестицидов и химии
-            </p>
-        </div>
-    </section>
+    @@include("smallComponents/eco.html",{
+        "class" :  " mainPage-eco"
+    })
 </main>
 <script src="scripts/main.js"></script>
 </body>

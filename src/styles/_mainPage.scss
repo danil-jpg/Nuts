@@ -798,12 +798,15 @@
 
 .eco {
   width: 100vw;
-  height: 750px;
 }
 .mainPage-eco {
   margin-top: 50px;
   background-image: url(../img/mainPage/nuts-in-hands.webp);
   background-repeat: no-repeat;
+  height: 750px;
+
+  margin-top: 100px;
+  display: inline-block;
 }
 .eco__content {
   width: per(600, 1920);
@@ -812,14 +815,23 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+
+  margin-top: 223px;
 }
 .eco__icon {
 }
 .goal__title {
+  transform: translate(-6px);
 }
 .eco__title {
 }
 .eco__descr {
+  font-style: normal;
+
+  margin-top: -22px;
+  width: 121%;
+  letter-spacing: -0.03em;
+  word-spacing: 0px;
 }
 .gaol__proposal {
 }

@@ -673,3 +673,122 @@
   margin-top: 49px;
   color: #ffffff;
 }
+
+.benefit {
+  margin: 0 auto;
+  margin-top: 84px;
+  .center-text_descr {
+    width: 602px;
+    margin: 0 auto;
+    word-spacing: -1px;
+    margin-top: -15px;
+    line-height: 1.4;
+  }
+  .center-text_title {
+    text-align: center;
+  }
+}
+
+.benefit__body {
+  display: flex;
+  justify-content: space-between;
+  width: 1290px;
+  margin: 0 auto;
+  margin-top: 65px;
+}
+.benefit__item {
+  width: 410px;
+  height: 525px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.benefit__item:first-of-type {
+  background-image: url(../img/mainPage/walnut.webp);
+  img {
+    transform: translate(0, 37px);
+  }
+}
+.benefit__item:nth-of-type(2) {
+  background-image: url(../img/mainPage/hazelnut.webp);
+  img {
+    margin-top: 59px;
+    margin-left: 8px;
+  }
+  .walnut-name {
+    transform: translate(0px, -19px);
+  }
+}
+.benefit__item:last-of-type {
+  background-image: url(../img/mainPage/rose-hip.webp);
+  img {
+    margin-top: 59px;
+    margin-left: -17px;
+  }
+
+  .walnut-name {
+    transform: translate(0px, -21px);
+  }
+}
+.Walnut-icon {
+}
+.walnut-name {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: rem(40);
+  line-height: lh(47, 40);
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+.benefit__item:hover {
+  transition: 0.3s;
+  .benefit__hover-content {
+    opacity: 0.95;
+  }
+}
+.benefit__hover-content {
+  transition: 0.3s;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #317856;
+  width: 100%;
+  height: 95.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 23px;
+  img {
+    transform: translate(5px, 39px) !important;
+    margin: 0 !important;
+  }
+  .walnut-name {
+    transform: translate(5px, 10px) !important;
+  }
+  .benefit__text-hover_top {
+    width: 330px;
+    transform: translate(0, -27px);
+  }
+  .benefit__text-hover_bottom {
+    width: 296px;
+    transform: translate(0, -44px);
+  }
+}
+.Walnut-icon {
+}
+
+.benefit__text-hover {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: rem(18);
+  line-height: lh(23, 18);
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}

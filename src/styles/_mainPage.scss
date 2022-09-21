@@ -630,3 +630,46 @@
     cursor: pointer;
   }
 }
+
+.goal {
+  background-image: url(../img/mainPage/man-with-potato.webp);
+  width: 100vw;
+  min-height: 740px;
+  display: inline-block;
+}
+.mainPage-goal {
+  margin-top: 87px;
+}
+.goal__content {
+  width: 1150px;
+  margin: 241px auto 0;
+}
+.goal__title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: rem(45);
+  line-height: lh(53, 45);
+  text-align: center;
+  letter-spacing: 0.01em;
+
+  color: #ffffff;
+}
+.goal-play {
+  img {
+    transform: translate(-9px, 26px);
+  }
+}
+.play {
+}
+.gaol__proposal {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 500;
+  font-size: rem(24);
+  line-height: lh(28, 24);
+  letter-spacing: 0.01em;
+  text-align: center;
+  margin-top: 49px;
+  color: #ffffff;
+}

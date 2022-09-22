@@ -183,3 +183,63 @@
     margin-left: 14px;
   }
 }
+
+@media screen and (max-width: 1023px) {
+  .contacts__messangers-wrapper {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contacts__content {
+    width: 95%;
+  }
+  .contacts__left {
+    grid-template-columns: 1fr;
+  }
+
+  .contacts__title {
+    transform: none;
+    grid-column: 1;
+    justify-self: center;
+  }
+
+  .contacts__connections-wrapper {
+    justify-self: center;
+  }
+
+  .contacts__email-wrapper {
+    justify-self: center;
+  }
+
+  .contacts__adress-wrapper {
+    justify-self: center;
+  }
+  .contacts__title-wrapper {
+    justify-self: center;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contacts__adress {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .contacts__production-wrapper {
+    justify-self: center;
+  }
+
+  .contacts__item-production-wrapper {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .contacts__production-adress {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .contacts__right {
+    margin-top: 15px;
+  }
+}

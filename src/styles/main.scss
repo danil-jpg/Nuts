@@ -3,9 +3,10 @@
 @import "mixFuncVar";
 @import "../../node_modules/swiper/swiper-bundle.css";
 @import "reset";
-@import "header";
-@import "statisticComp";
-@import "newsComp";
+@import "bigComponents/header";
+@import "bigComponents/footer";
+@import "./smallComponents/statisticComp";
+@import "./smallComponents/newsComp";
 @import "mainPage";
 
 html {

@@ -128,6 +128,9 @@
 @media screen and (max-width: 767px) {
   .footer__nav {
     width: 300px;
+    grid-template-rows: 66px;
+  }
+  .footer__nav.active {
     grid-template-rows: 66px 30px 30px 30px 30px 30px 30px;
   }
   .footer__copyright {
@@ -153,7 +156,10 @@
   .footer__link {
     display: none;
   }
-  .footer__link.disabled {
+  .footer__link.active {
     display: block;
+  }
+  .footer__copyright-text {
+    width: 291px;
   }
 }

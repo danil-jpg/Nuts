@@ -4,7 +4,8 @@ function burger() {
     burger = document.querySelector(".burger-menu"),
     headerMobile = document.querySelector(".header__mobile"),
     burgerTriggerFooter = document.querySelector(".burger-trigger_footer"),
-    burgerFooter = document.querySelectorAll(".footer__link");
+    burgerFooter = document.querySelectorAll(".footer__link"),
+    footerServiceElem = document.querySelector(".footer__nav");
 
   burgerTrigger.addEventListener("click", () => {
     burger.classList.toggle("active");
@@ -19,6 +20,7 @@ function burger() {
   burgerTriggerFooter.addEventListener("click", () => {
     burgerFooter.forEach((item) => {
       item.classList.toggle("active");
+      footerServiceElem.classList.toggle("active");
     });
   });
 }

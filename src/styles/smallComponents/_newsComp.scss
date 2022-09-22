@@ -163,3 +163,14 @@
   width: 100%;
   height: 100%;
 }
+
+@media screen and (max-width: 1920px) {
+  .news__redirect-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25.536585%;
+    margin-left: 22px;
+    margin-top: 10px;
+  }
+}

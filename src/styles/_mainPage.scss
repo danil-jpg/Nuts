@@ -54,455 +54,6 @@
   text-align: center;
 }
 
-.production {
-  .center-text_descr {
-    width: 100%;
-    margin-top: -14px;
-    transform: translate(-2px, -2px);
-    line-height: lh(28, 18);
-  }
-
-  .center-text__wrapper {
-    width: 614px;
-  }
-}
-.center-text__wrapper {
-  width: auto;
-  margin: 0 auto;
-  text-align: center;
-}
-.center-text_title {
-  font-family: "RalewayL";
-  font-style: normal;
-  font-weight: 800;
-  font-size: rem(45);
-  line-height: lh(53, 45);
-  letter-spacing: 0em;
-  color: #1a2f3f;
-
-  letter-spacing: 0.01em;
-}
-.center-text_descr {
-  font-family: "RalewayL";
-  font-style: normal;
-  font-weight: 500;
-  font-size: rem(18);
-  line-height: lh(22, 18);
-  text-align: center;
-
-  letter-spacing: 0.01em;
-  color: #1a2f3f;
-}
-
-.production__cards-wrapper {
-  width: 1290px;
-  display: flex;
-  margin: 0 auto;
-  margin-top: 62px;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  row-gap: 48px;
-}
-.production__card {
-  width: 410px;
-  height: 534px;
-  box-sizing: border-box;
-  min-width: 0;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  position: relative;
-}
-.production__card.discont::before {
-  content: "";
-  position: absolute;
-  left: -2px;
-  background-image: url(../img/mainPage/discont.svg);
-  top: 18.5px;
-  width: 85px;
-  height: 32px;
-  z-index: 2;
-  pointer-events: none;
-}
-
-.production__card.newThing::before {
-  content: "";
-  position: absolute;
-  left: -2px;
-  background-image: url(../img/mainPage/new-thing.webp);
-  top: 18.5px;
-  width: 85px;
-  height: 32px;
-  z-index: 2;
-  pointer-events: none;
-}
-.production__card:hover {
-  outline: 1.5px solid #93b474;
-  outline-offset: 0px;
-  box-sizing: border-box;
-  min-width: 0;
-  position: relative;
-  z-index: 999;
-}
-.production__img {
-  width: 406px;
-  height: 278px;
-  position: relative;
-  .nut_long {
-    max-width: 100%;
-    transition: 0.3s;
-  }
-
-  .loop {
-    position: absolute;
-    left: calc(50% - 55px / 2);
-    top: calc(52% - 55px / 2);
-    opacity: 0;
-    align-items: center;
-    transition: 0.2s;
-  }
-}
-
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  display: none;
-}
-.production__img:hover {
-  overflow: hidden;
-  .nut_long {
-    transform: scale(1.1);
-    transition: 0.3s;
-  }
-
-  .loop {
-    z-index: 1;
-    opacity: 1;
-    transition: 0.2s;
-  }
-  .swiper-button-next,
-  .swiper-button-prev {
-    transition: 0.2s;
-    visibility: visible;
-  }
-  * {
-    z-index: 1;
-    opacity: 1;
-    transition: 0.2s;
-  }
-}
-
-.swiper-production {
-  position: relative;
-}
-.swiper-button-next,
-.swiper-button-prev {
-  width: 23px;
-  height: 23px;
-}
-
-.right-arrow {
-  width: 23px;
-  height: 23px;
-  position: absolute;
-  right: 15px;
-  top: 58%;
-  transition: 0.2s;
-  cursor: pointer;
-  align-items: center;
-  object-fit: contain;
-  opacity: 1;
-}
-.left-arrow {
-  position: absolute;
-  left: 15px;
-  top: 58%;
-  transition: 0.2s;
-  cursor: pointer;
-  align-items: center;
-  object-fit: contain;
-  width: 23px;
-  height: 23px;
-  opacity: 1;
-}
-
-// .left-arrow.active,
-// .right-arrow.active {
-//   transition: 0.2s;
-//   opacity: 1;
-// }
-
-.production__center-descr {
-  padding-left: 23px;
-  width: 100%;
-  box-sizing: border-box;
-}
-.production__card-name {
-  font-family: "RalewayL";
-  font-style: normal;
-  font-weight: 700;
-  font-size: rem(18);
-  line-height: lh(21, 18);
-  text-align: left;
-  letter-spacing: 0.01em;
-
-  letter-spacing: -0em;
-  transform: translate(-2px);
-
-  color: #1a2f3f;
-}
-.production__ard {
-  font-family: "MontserratL";
-  font-style: normal;
-  font-weight: 500;
-  font-size: rem(15);
-  line-height: lh(18, 15);
-  text-align: left;
-  letter-spacing: 0.01em;
-  color: #8a8a8a;
-  transform: translate(-1px);
-  margin-top: -10px;
-}
-.production__descr {
-  font-family: "RalewayL";
-  font-style: normal;
-  font-weight: 600;
-  font-size: rem(16);
-  letter-spacing: 0.01em;
-
-  width: 260px;
-  margin-top: -2px;
-  line-height: 1.1;
-  transform: translate(-1px);
-  color: #000000;
-}
-.production__characteristic-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.production__characteristic_left {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 75px;
-  align-items: flex-start;
-  height: 64px;
-  img {
-    width: 18px;
-    height: 18px;
-    transform: translate(-2px, 7px);
-  }
-}
-.production__weight-text-wrapper {
-  margin-top: -2px;
-}
-.production__weight {
-  font-family: "MontserratL";
-  font-style: normal;
-  font-weight: 500;
-  font-size: rem(14);
-  line-height: lh(17, 14);
-  letter-spacing: 0.01em;
-  color: #8a8a8a;
-  line-height: 0;
-  margin-bottom: auto;
-  display: flex;
-}
-.production__weight-num {
-  font-size: rem(14);
-  line-height: lh(17, 14);
-  color: #337d5a;
-  line-height: 0;
-  font-size: rem(14);
-  letter-spacing: 0.01em;
-  font-family: "MontserratL";
-  font-style: normal;
-  font-weight: 500;
-}
-
-.production__weight-num_r {
-  transform: translate(0, -15px);
-  margin-top: 17px;
-  font-weight: 600;
-
-  transform: translate(-1px, -10px);
-}
-.production__characteristic_right {
-  display: flex;
-  flex-direction: row;
-
-  transform: translate(2px);
-
-  justify-content: space-between;
-  align-items: center;
-  img {
-    transform: translate(-46px, -15px);
-  }
-}
-.production__type-text-wrapper {
-  font-family: "MontserratL";
-  font-style: normal;
-  font-weight: 500;
-  font-size: rem(14);
-  line-height: lh(17, 14);
-  letter-spacing: 0.01em;
-  color: #8a8a8a;
-
-  transform: translate(-32px, -12px);
-}
-.production__type {
-}
-.production__bottom {
-  padding-left: 23px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-
-.production__bottom::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "";
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  width: 100%;
-  top: -12px;
-}
-.production__price-wrapper {
-  font-family: "MontserratL";
-  font-style: normal;
-  font-weight: 600;
-  font-size: rem(15);
-  line-height: lh(18, 15);
-  letter-spacing: 0.01em;
-  color: #1a2f3f;
-}
-.production__price-text {
-  color: #1a2f3f;
-  margin-left: -2px;
-  margin-top: 10px;
-}
-.production__price-num {
-  color: #337d5a;
-  font-size: 20px;
-  margin-left: 4px;
-}
-.production__price-val_1 {
-  font-family: "MontserratL";
-  font-style: normal;
-  font-weight: 600;
-  font-size: rem(15);
-  line-height: lh(18, 15);
-  letter-spacing: 0.01em;
-  color: #337d5a;
-  margin-left: -2px;
-}
-.production__card.discont {
-  .production__price-val_1 {
-    font-family: "MontserratL";
-    font-style: normal;
-    font-weight: 600;
-    font-size: rem(15);
-    line-height: lh(18, 15);
-    letter-spacing: 0.01em;
-    color: #337d5a;
-    margin-left: -2px;
-  }
-  .production__price-num-crossed {
-    font-size: 16px;
-    margin-left: 0px;
-    position: relative;
-    top: 2px;
-    color: #8a8a8a;
-    text-decoration: line-through;
-  }
-  .production__price-text {
-    display: none;
-  }
-  .production__price-text_discont {
-    display: block;
-  }
-  .production__price-val_1 {
-    margin-left: 4px;
-  }
-  .production__price-num {
-    top: 0px;
-    position: relative;
-    left: 0px;
-  }
-}
-
-.production__price-text_discont {
-  display: none;
-}
-
-.production__price-val_2 {
-  font-family: "MontserratL";
-  font-style: normal;
-  font-weight: 500;
-  font-size: rem(13);
-  letter-spacing: 0.01em;
-  color: #8a8a8a;
-  position: relative;
-  top: 0px;
-  left: -3px;
-}
-.production__price-num {
-  top: 2px;
-  position: relative;
-  left: -3px;
-}
-
-.production__price-val_1 {
-  margin-left: 4px;
-
-  top: -1px;
-  position: relative;
-  left: -5px;
-}
-.production__price-val_3 {
-  margin-left: 4px;
-  position: relative;
-  top: 2px;
-}
-
-.production__btn {
-  margin-right: 22px;
-  button {
-    width: 124px;
-    height: 41px;
-    background: #337d5a;
-    border: 1px solid #337d5a;
-    font-family: "RalewayL";
-    font-style: normal;
-    font-weight: 700;
-    font-size: rem(14);
-    line-height: lh(16, 14);
-    letter-spacing: 0.02em;
-
-    color: #ffffff;
-  }
-}
-.production__bottom .mainPage-top {
-  transform: translate(-2px);
-}
-
-.production__bottom-btn {
-  width: 200px;
-  height: 52px;
-  border: 2px solid #337d5a;
-  font-family: "RalewayL";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 18px;
-  letter-spacing: 0.02em;
-  color: #337d5a;
-  background: transparent;
-  margin: 0 auto;
-  display: block;
-  margin-top: 71px;
-}
 .article-title {
   font-family: "RalewayL";
   font-style: normal;
@@ -842,5 +393,68 @@
   letter-spacing: -0.03em;
   word-spacing: 0px;
 }
+@media screen and (max-width: 1440px) {
+  .information__body {
+    width: 996px;
+    grid-template-columns: 1fr;
+  }
+  .information__column {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .information__body {
+    width: 760px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .top__title {
+    font-size: 2.375rem;
+  }
+  .top__descr {
+    width: 90%;
+  }
+  .production {
+    .center-text__wrapper {
+      width: 300px;
+    }
+  }
+  .production__cards-wrapper {
+    width: 300px;
+  }
+  .production__img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .production__price-num {
+    margin-left: 0;
+    width: 100%;
+    left: 0;
+  }
+  .production__price-wrapper {
+    font-size: 0.8375rem;
+  }
+  .production__card.discont {
+    .production__price-wrapper {
+      width: 40%;
+    }
+  }
+  .information__body {
+    width: 300px;
+    grid-template-columns: 300px;
+  }
 
-// footer
+  .information__column {
+    width: 100%;
+  }
+
+  .information__title {
+    font-size: 1.8125rem;
+  }
+  .information__descr_bottom {
+    width: 100%;
+  }
+  .information__column:nth-of-type(1) {
+    width: 100%;
+  }
+}

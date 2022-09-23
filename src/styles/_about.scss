@@ -10,6 +10,33 @@
   width: 199px;
 }
 
+.information-about {
+  background-color: white;
+  margin-top: 3px;
+
+  .article-descr {
+    letter-spacing: -0.001em;
+    line-height: 1.37;
+  }
+  .information__descr_bottom {
+    margin-top: 38px;
+    line-height: 1.5;
+  }
+  .information__descr_bottom-bottom {
+    margin-top: 32px;
+    width: 115%;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+}
+
+@media screen and (max-width: 1023px) {
+}
+
+@media screen and (max-width: 767px) {
+}
+
 @media screen and (max-width: 767px) and (min-width: 576px) {
   .top__descr {
     font-size: 1.3625rem;
@@ -24,5 +51,16 @@
   .about-nav {
     left: 7%;
     top: 150px;
+  }
+  .information-about {
+    .information__descr_bottom-bottom {
+      width: 100%;
+    }
+  }
+
+  .swiper-video {
+    .swiper-wrapper {
+      height: 300px;
+    }
   }
 }

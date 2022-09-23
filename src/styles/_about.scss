@@ -1,0 +1,28 @@
+.about {
+}
+.about-top {
+  .top {
+    background-image: url(../img/about/banner_about.webp);
+  }
+}
+
+.about-nav {
+  width: 199px;
+}
+
+@media screen and (max-width: 767px) and (min-width: 576px) {
+  .top__descr {
+    font-size: 1.3625rem;
+  }
+  .about-nav {
+    left: 7%;
+    top: 300px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-nav {
+    left: 7%;
+    top: 150px;
+  }
+}

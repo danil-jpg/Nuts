@@ -302,3 +302,98 @@
     justify-self: center;
   }
 }
+
+@media screen and (max-width: 1023px) {
+  .filter-wrapper {
+    width: 760px;
+    justify-content: space-around;
+  }
+
+  .filter__btn {
+    margin-top: 12px;
+  }
+
+  .nuts-descr__wrapper {
+    width: 760px;
+  }
+
+  .nuts-descr__title {
+    font-size: 2rem;
+  }
+
+  .nuts-descr__subtitle {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 576px) {
+  .shop-nav {
+    top: 300px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .shop-nav {
+    top: 120px;
+  }
+  .filter-wrapper {
+    justify-content: center;
+    width: 300px;
+    justify-content: center;
+  }
+
+  .filter__input_2 {
+    /* width: 96%; */
+    width: 283px;
+    margin-top: 7px;
+    background-position: 95% 16px;
+  }
+
+  .filter__price-wrapper {
+    margin-top: 10px;
+  }
+
+  .filter__btn {
+    width: 283px;
+    margin-top: 23px;
+  }
+
+  .filter__close-wrapper {
+    transform: translate(0px, -69px);
+  }
+  .nuts-descr__wrapper {
+    width: 300px;
+  }
+  .nuts-descr__left {
+    width: 300px;
+    justify-self: auto;
+  }
+
+  .nuts-descr__title {
+    width: 300px;
+    width: 100%;
+  }
+
+  .nuts-descr__subtitle {
+    width: 100%;
+  }
+
+  .nuts-descr__right {
+    width: 300px;
+  }
+
+  .shopPage {
+    .swiper-wrapper {
+      height: 100%;
+
+      .video__wrapper {
+        img {
+          object-fit: cover;
+          max-width: 100%;
+          max-height: 100%;
+          object-position: center;
+        }
+      }
+    }
+  }
+}

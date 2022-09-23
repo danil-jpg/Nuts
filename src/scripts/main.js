@@ -8,7 +8,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const mainPage = document.querySelector(".mainPage"),
     shopPage = document.querySelector(".shopPage");
 
-  // burger();
+  burger();
 
   if (mainPage) {
     cardSlider();

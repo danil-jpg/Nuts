@@ -28,13 +28,228 @@
   }
 }
 
-@media screen and (max-width: 1439px) {
+.person {
+  background: #fbfbfb;
+  width: 100%;
+
+  display: inline-block;
+  margin-top: -13px;
+}
+.person__content {
+  width: per(1290, 1920);
+  margin: 85px auto 0;
+  display: grid;
+  margin-bottom: 80px;
+  grid-template-columns: 0.856fr 1fr 1fr;
+}
+.person__img-wrapper {
+  img {
+    width: 365px;
+    height: 528px;
+    margin-left: -9px;
+    object-fit: cover;
+  }
+}
+.person__center-wrapper {
+  margin-top: 15px;
+}
+.person__name {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: rem(32);
+  line-height: lh(38, 32);
+  letter-spacing: 0.01em;
+  color: #1a2f3f;
+}
+.person__bio {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: rem(16);
+  line-height: lh(21, 16);
+  letter-spacing: 0.01em;
+  color: #1a2f3f;
+  margin-top: -21px;
+  letter-spacing: 0.08em;
+  width: per(289, 451);
+}
+.person__quote-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 448px;
+  align-items: center;
+
+  img {
+    margin-top: -18px;
+    margin-left: 2px;
+  }
+}
+.person__quote-text {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 500;
+  font-size: rem(15);
+  line-height: lh(13, 15);
+  letter-spacing: 0.01em;
+  color: #1a2f3f;
+
+  margin-top: 24px;
+  width: per(405, 448);
+  letter-spacing: 0.001em;
+  transform: translate(-3px);
+  line-height: 1.1;
+}
+.person__btn {
+  background: transparent;
+  width: 188px;
+  height: 52px;
+  border: 1.5px solid #337d5a;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: rem(14);
+  line-height: lh(16, 14);
+  letter-spacing: 0.02em;
+  color: #337d5a;
+
+  margin-top: 48px;
+}
+.person__right {
+  width: 453px;
+  height: 493px;
+  background-image: url(../img/about/strange-circle.webp);
+  background-position: 171% 115%;
+  background-color: #337d5a;
+  background-repeat: no-repeat;
+  margin-top: 15px;
+}
+.person__history-title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: rem(32);
+  line-height: lh(38, 32);
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  text-align: center;
+}
+.person__histyry-text-wrapper {
+  margin: 0 auto;
+  width: 360px;
+}
+.person__history-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: rem(14);
+  line-height: lh(22, 14);
+  color: #fcfcfc;
+}
+.person__history-text-top {
+}
+.person__history-text-center {
+  width: 106%;
+}
+.person__history-text-bottom {
+}
+
+@media screen and (max-width: 1515px) {
+  .person__img-wrapper {
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      margin-left: 0;
+      object-fit: cover;
+    }
+  }
+  .person__content {
+    grid-template-columns: 50% 1fr;
+  }
+  .person__right {
+    grid-column: 1/3;
+    width: 100%;
+    background-position: right bottom;
+    max-height: 100%;
+  }
+  .person__histyry-text-wrapper {
+    width: 360px;
+  }
+  .person__content {
+  }
+  .person__center-wrapper {
+    padding-left: 20px;
+  }
 }
 
 @media screen and (max-width: 1023px) {
+  .person__content {
+    width: per(760, 768);
+  }
+  .person__quote-wrapper {
+    width: 100%;
+  }
+
+  .person__quote-text {
+    margin-left: 9px;
+  }
 }
 
 @media screen and (max-width: 767px) {
+  .person__content {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .person__img-wrapper {
+    width: 88%;
+    height: 100%;
+    justify-self: center;
+    img {
+      max-width: 80%;
+      max-height: 80%;
+      justify-self: center;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+
+  .person__center-wrapper {
+    padding-left: 0;
+    width: 100%;
+    width: 88%;
+    margin-top: -120px;
+    margin: 0 auto;
+    margin-top: -120px;
+  }
+
+  .person__name {
+    width: 100%;
+  }
+
+  .person__quote-wrapper {
+    flex-wrap: wrap;
+    margin-top: 44px;
+  }
+
+  .person__quote-text {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .person__right {
+    grid-column: 1;
+    width: 100%;
+    justify-self: center;
+  }
+
+  .person__histyry-text-wrapper {
+    width: 300px;
+    justify-self: center;
+  }
+
+  .person__history-text {
+    width: 300px;
+  }
 }
 
 @media screen and (max-width: 767px) and (min-width: 576px) {

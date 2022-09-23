@@ -154,6 +154,103 @@
 .person__history-text-bottom {
 }
 
+.about-statistic {
+  margin-top: 58px;
+}
+
+.about-gallery {
+  width: 100%;
+  background: #fbfbfb;
+
+  display: inline-block;
+  margin-top: 86px;
+}
+.about-gallery__content {
+  width: 1290px;
+  margin: 0 auto;
+  margin-top: 89px;
+}
+.about-gallery__text-wrapper {
+  margin: 0 auto;
+
+  text-align: center;
+}
+.center-text_title {
+}
+.about-gallery__title {
+}
+.center-text_descr {
+}
+.about-gallery__descr {
+  margin-top: -23px;
+}
+
+.about-gallery__gallery-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 30px;
+
+  margin-top: 65px;
+}
+.about-gallery__gallery-item:nth-of-type(1) {
+  position: relative;
+}
+.about-gallery__gallery-item:nth-of-type(1):hover {
+}
+.about-gallery__gallery-item:nth-of-type(2) {
+}
+.about-gallery__gallery-item:nth-of-type(3) {
+  margin-top: -4px;
+}
+.about-gallery__gallery-item:nth-of-type(4) {
+  margin-top: -4px;
+}
+.about-gallery__gallery-item:nth-of-type(5) {
+  margin-top: -4px;
+  margin-left: 2px;
+}
+.about-gallery__gallery-item:nth-of-type(6) {
+  margin-top: -4px;
+  margin-left: 1px;
+}
+
+.about-gallery__gallery-item-text-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(51, 125, 90, 0.97);
+  width: 489px;
+  height: 100%;
+  width: 100%;
+  transition: 0.3s;
+  opacity: 0;
+}
+.about-gallery__gallery-item-text-wrapper:hover {
+  opacity: 1;
+}
+.about-gallery__gallery-item-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: rem(22);
+  line-height: lh(27, 22);
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  margin-top: 75px;
+  margin-left: 39px;
+}
+.about-gallery__gallery-item-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: rem(15);
+  line-height: lh(22, 15);
+  color: #ffffff;
+  margin-left: 39px;
+  width: 65%;
+}
+
 @media screen and (max-width: 1515px) {
   .person__img-wrapper {
     img {
@@ -179,6 +276,9 @@
   }
   .person__center-wrapper {
     padding-left: 20px;
+  }
+  .statistic__block:nth-of-type(3) .statsistic__item_top {
+    padding-right: 0px;
   }
 }
 
@@ -277,5 +377,8 @@
     .swiper-wrapper {
       height: 300px;
     }
+  }
+  .statistic__block:nth-of-type(3) .statsistic__item_top {
+    padding-right: 0px;
   }
 }

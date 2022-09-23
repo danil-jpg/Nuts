@@ -12,6 +12,11 @@
 
   justify-content: space-between;
 }
+
+.burger-trigger_footer {
+  display: none;
+}
+
 .header__logo-wrapper {
 }
 .footer__logo-wrapper {
@@ -142,6 +147,7 @@
 
   .burger-trigger_footer {
     text-align: center;
+    display: block;
   }
 
   .footer__link {

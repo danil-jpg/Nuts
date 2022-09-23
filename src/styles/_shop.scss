@@ -1,0 +1,255 @@
+.shopPage {
+  position: relative;
+}
+
+.banner {
+  background-image: url(../img/shop/big-wallnut.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+  width: 100%;
+
+  display: inline-block;
+}
+.shop-banner {
+}
+.banner__title {
+  text-align: center;
+  margin-top: 127px;
+}
+.top__title {
+}
+
+.navigation-comp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: rem(14);
+  line-height: 0;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  position: absolute;
+  left: 314px;
+  top: 208px;
+  width: 145px;
+}
+.cards {
+  width: 100%;
+  display: inline-block;
+  margin-top: 70px;
+}
+.filter-wrapper {
+  width: 1290px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95px;
+
+  margin-right: 69px;
+  img {
+    transform: translate(1px, -3px);
+  }
+}
+.filter__text {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: rem(17);
+  letter-spacing: 0.01em;
+  color: #1a2f3f;
+
+  transform: translate(-1px);
+  letter-spacing: 0.01em;
+}
+.filter__input {
+  width: 283px;
+  height: 48px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-image: url(../img/shop/arrow-down-green.webp);
+  background-repeat: no-repeat;
+
+  margin-right: 23px;
+  padding-left: 15px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: rem(16);
+  line-height: lh(19, 16);
+  letter-spacing: 0.01em;
+  box-sizing: border-box;
+  color: #1a2f3f;
+  background-position: 95% 16px;
+  transform: translate(0px, -1px);
+}
+.filter__input_2 {
+  width: 171px;
+  height: 48px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-image: url(../img/shop/arrow-down-green.webp);
+  background-repeat: no-repeat;
+  margin-right: 51px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: rem(16);
+  line-height: lh(19, 16);
+  letter-spacing: 0.01em;
+  color: #1a2f3f;
+  box-sizing: border-box;
+  padding-left: 21px;
+  padding-bottom: 3px;
+  width: 175px;
+  background-position: 93%;
+}
+.filter__price-wrapper {
+  width: 139px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-right: 162px;
+}
+.filter__price-text {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: rem(17);
+  letter-spacing: 0.01em;
+  color: #1a2f3f;
+}
+.filter__btn {
+  width: 150px;
+  height: 48px;
+  background: #337d5a;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: rem(14);
+  line-height: lh(16, 14);
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  border: none;
+
+  margin-right: 47px;
+  margin-top: -15px;
+}
+.filter__close-wrapper {
+  width: 135px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 87px;
+  margin-top: -15px;
+}
+.filter__close-text {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: rem(14);
+  line-height: lh(16, 14);
+  letter-spacing: 0.01em;
+  color: #8a8a8a;
+}
+
+.cards-shop-wrapper {
+  margin: 75px auto 0;
+}
+
+.nuts-descr {
+  width: 100%;
+  background: #fbfbfb;
+  min-height: 662px;
+  margin-top: 160px;
+}
+.nuts-descr__wrapper {
+  display: grid;
+  width: 1290px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+}
+.nuts-descr__left {
+}
+.nuts-descr__title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: rem(45);
+  line-height: lh(46, 45);
+  letter-spacing: 0.01em;
+  color: #1a2f3f;
+
+  letter-spacing: 0.001em;
+}
+.nuts-descr__subtitle {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: rem(24);
+  line-height: 0;
+  color: #1a2f3f;
+
+  margin-top: -6px;
+  letter-spacing: 0.001em;
+}
+.nuts-descr__text-wrapper {
+  margin-top: 160px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: rem(16);
+  line-height: lh(19, 16);
+  letter-spacing: 0.01em;
+  color: #1a2f3f;
+  width: 90%;
+  margin-top: 40px;
+  font-size: 1.1rem;
+  line-height: 1.41875;
+  height: 315px;
+  overflow: scroll;
+}
+.nuts-descr__text:first-of-type {
+  margin-top: 0px;
+  width: 79%;
+}
+
+.nuts-descr__text:nth-of-type(2) {
+  width: 87%;
+
+  margin-top: 28px;
+}
+.nuts-descr-text:nth-of-type(3) {
+  width: 92%;
+  margin-top: 28px;
+}
+.nuts-descr-text {
+}
+
+.nuts-descr__right {
+  margin-top: -64px;
+}
+
+.shopContacts {
+  margin-top: -5px;
+  .contacts__right {
+    margin-top: 31px;
+  }
+}
+
+.shopFooter {
+  margin-top: 68px;
+}
+
+.footer__link {
+  letter-spacing: -0.01em;
+}

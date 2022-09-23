@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Магазин</title>
+        <link rel="stylesheet" href="styles/main.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet">
+    </head>
+    @@include("smallComponents/header.html",{
+		"class" : "header-shop"
+	})
+    <body class="shopPage">
+        <main>
+            @@include("smallComponents/navigationComp.html",{
+				"class" : "shop-nav",
+				'title2' : "Магазин"
+			})
+			
+			@@include("smallComponents/banner.html",{
+				"class" : "shop-banner"
+			})
+            <section class="cards">
+                <div class="filter-wrapper">
+                    <div class="filter">
+                        <p class="filter__text">
+                            Фильтр
+                        </p>
+                        <img src="img/shop/settings-icon.webp" alt="settings-icon">
+                    </div>
+                    <input type="text" placeholder="Вкус" class="filter__input">
+                    <input type="text" placeholder="Масса" class="filter__input_2">
+                    <div class="filter__price-wrapper">
+                        <p class="filter__price-text">
+                            Стоимость
+                        </p>
+                        <div>
+                            <img src="img/shop/arrow-down-left.webp" alt="arrow">
+                            <img src="img/shop/right-top.webp" alt="arrow">
+                        </div>
+                    </div>
+                    <button class="filter__btn">Применить</button>
+                    <div class="filter__close-wrapper">
+                        <img src="img/shop/close-button.webp" alt="close">
+                        <p class="filter__close-text">
+                            Сбросить
+                        </p>
+                    </div>
+                </div>
+                <div class="production__cards-wrapper cards-shop-wrapper">
+                    @@include("smallComponents/productionCard.html",{
+					"additional-class" : "discont",
+					"url" : "img/mainPage/nut_long_1.webp"
+					})
+					@@include("smallComponents/productionCard.html",{
+						"additional-class" : "newThing",
+						"url" : "img/mainPage/nut_long_2.webp"
+					})
+					@@include("smallComponents/productionCard.html",{
+						"additional-class" : " ",
+						"url" : "img/mainPage/nut_long_3.webp"
+					})
+					@@include("smallComponents/productionCard.html",{
+						"additional-class" : "discont",
+						"url" : "img/mainPage/nut_wide.webp"
+					})
+					@@include("smallComponents/productionCard.html",{
+						"additional-class" : " ",
+						"url" : "img/mainPage/nut_wide_3.webp"
+					})
+					@@include("smallComponents/productionCard.html",{
+						"additional-class" : "",
+						"url" : "img/mainPage/nut_wide_3.webp"
+					})
+                </div>
+                <button class="production__bottom-btn">
+                    Загрузить еще
+                </button>
+            </section>
+            <article class="nuts-descr">
+                <div class="nuts-descr__wrapper">
+                    <div class="nuts-descr__left">
+                        <h2 class="nuts-descr__title">
+                            Экологически чистый
+							грецкий орех
+                        </h2>
+                        <p class="nuts-descr__subtitle">
+                            Оптом, и в розницу
+                        </p>
+                        <div class="nuts-descr__text-wrapper">
+                            <p class="nuts-descr__text">
+                                Сельскохозяйственный обслуживающий кооператив 
+								“Орех Причерноморья” выращивает смешанные сады 
+								ореха грецкого с фундуком, а также ореха грецкого 
+								с шиповником, на площади более 150 гектаров.
+                            </p>
+                            <p class="nuts-descr__text">
+                                Помимо этого кооператив занимается выращиванием 
+								посадочного материала, саженцов привитого и непривитого 
+								грецкого ореха, фундука и шиповника.
+                            </p>
+                            <p class="nuts-descr-text">
+                                Орех Причерноморья – это первый и единственный в Украине 
+								сад по совместному выращиванию фундука и грецкого ореха
+								Орех Причерноморья – это первый и единственный в Украине 
+								сад по совместному выращиванию фундука и грецкого ореха
+								Орех Причерноморья – это первый и единственный в Украине 
+								сад по совместному выращиванию фундука и грецкого ореха
+								Орех Причерноморья – это первый и единственный в Украине 
+								сад по совместному выращиванию фундука и грецкого ореха
+								Орех Причерноморья – это первый и единственный в Украине 
+								сад по совместному выращиванию фундука и грецкого ореха
+								Орех Причерноморья – это первый и единственный в Украине 
+								сад по совместному выращиванию фундука и грецкого ореха
+								Орех Причерноморья – это первый и единственный в Украине 
+								сад по совместному выращиванию фундука и грецкого ореха
+								Орех Причерноморья – это первый и единственный в Украине 
+								сад по совместному выращиванию фундука и грецкого ореха
+                            </p>
+                        </div>
+                    </div>
+                    <div class="nuts-descr__right">
+                        @@include("smallComponents/photoComponent.html",{
+							"url" : "img/shop/walnut-in-hands.webp"
+						})
+                    </div>
+                </div>
+            </article>
+            @@include("smallComponents/contacts.html", {
+				"class" : "shopContacts"
+			})
+        </main>
+        @@include("smallComponents/footer.html",{
+			"class" : "shopFooter"
+		})
+    </body>
+    <script src="scripts/main.js"></script>
+</html>

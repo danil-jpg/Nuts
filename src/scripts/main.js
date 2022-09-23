@@ -5,12 +5,16 @@ import cardSlider from "./cardsSlider.js";
 import newsSlider from "./_newsSlider.js";
 
 window.addEventListener("DOMContentLoaded", () => {
-  const mainPage = document.querySelector(".mainPage");
+  const mainPage = document.querySelector(".mainPage"),
+    shopPage = document.querySelector(".shopPage");
 
-  burger();
+  // burger();
 
   if (mainPage) {
     cardSlider();
     newsSlider();
+  }
+  if (shopPage) {
+    cardSlider();
   }
 });

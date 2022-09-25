@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Главная страница</title>
         <link rel="stylesheet" href="styles/main.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet"> -->
+        <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet"> -->
     </head>
     <body class="mainPage">
         @@include("smallComponents/header.html",{
@@ -74,8 +74,9 @@
                             </span>
                             <span class="information__descr_2 article-descr">
                                 выращивает смешанные сады 
-                    ореха грецкого с фундуком, а также ореха грецкого 
-                    с шиповником, на площади более 150 гектаров.
+                    ореха грецкого с фундуком, а также ореха грецкого
+                                <br>
+                                с шиповником, на площади более 150 гектаров.
                             </span>
                         </div>
                         <p class="information__descr_bottom article-descr">
@@ -88,9 +89,7 @@
                         </button>
                     </div>
                     <div class="information__column">
-                        @@include("smallComponents/videoComponent.html",{
-                    "url" : "./video/videoDef.mp4"
-                })
+                        @@include("smallComponents/iFrame.html")
                     </div>
                 </div>
             </article>

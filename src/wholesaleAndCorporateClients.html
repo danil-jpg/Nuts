@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Оптовым и корпоративным клиентам</title>
+        <link rel="stylesheet" href="styles/main.min.css">
+    </head>
+    <!-- header -->
+    @@include("smallComponents/header.html",{
+			"class" : ""
+		})
+    <body class="wholeselePage">
+        <main>
+            <!-- PageName title -->
+            @@include("smallComponents/navigationComp.html",{
+				"class" : "whosale-nav",
+				"title2" : "Оптовым и корпоративным клиентам "
+			})
+            <!-- First section -->
+            <section class="whosale-top">
+                @@include("smallComponents/topVideo.html",{
+                "text-wrapper" : "wholesalePage-wrapper",
+                "page-play" : "wholesalePage-play"
+            })
+            </section>
+            <section class="salePoint">
+                <div class="salePoint__content">
+                    <div class="salePoint__top-wrapper"></div>
+                </div>
+            </section>
+        </main>
+    </body>
+    <script src="scripts/main.js"></script>
+</html>

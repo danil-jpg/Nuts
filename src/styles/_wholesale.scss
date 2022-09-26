@@ -1,0 +1,36 @@
+.whosale-top {
+  .top {
+    background-image: url(../img/wholesale/whosale-top-banner.webp);
+    background-position: center;
+  }
+
+  .wholesalePage-play {
+    display: none;
+  }
+}
+
+.whosale-nav {
+  width: 347px;
+}
+
+.wholesalePage-wrapper {
+  margin-top: 240px;
+}
+
+@media screen and (max-width: 1919px) {
+  .whosale-nav {
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .whosale-nav {
+    // top: 289px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .whosale-nav {
+    display: none;
+  }
+}

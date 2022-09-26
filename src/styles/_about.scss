@@ -204,11 +204,7 @@
   margin-top: -4px;
   position: relative;
 }
-.about-gallery__gallery-item:nth-of-type(3):hover {
-  position: absolute;
-  top: 0%;
-  left: 0;
-}
+
 .about-gallery__gallery-item:nth-of-type(4) {
   margin-top: -4px;
 }
@@ -219,6 +215,45 @@
 .about-gallery__gallery-item:nth-of-type(6) {
   margin-top: -4px;
   margin-left: 1px;
+}
+
+.play {
+}
+.about-gallery__play {
+}
+.about-gallery__play-int {
+  top: 0%;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  width: 563px;
+  left: 50%;
+  transform: translate(-50%);
+  top: 42%;
+}
+.about-gallery__play-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: rem(22);
+  line-height: lh(27, 22);
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+.about-gallery__play-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: rem(14);
+  line-height: lh(21, 14);
+  text-align: center;
+  color: #ffffff;
+
+  margin-top: -6px;
+
+  span {
+    font-size: 700;
+  }
 }
 
 .about-gallery__gallery-item-text-wrapper {

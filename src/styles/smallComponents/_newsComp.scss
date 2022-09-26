@@ -164,7 +164,11 @@
   height: 100%;
 }
 
-@media screen and (max-width: 1920px) {
+.news__item_3 {
+  margin-left: -5px;
+}
+
+@media screen and (max-width: 1919px) {
   .news__redirect-wrapper {
     display: flex;
     align-items: center;

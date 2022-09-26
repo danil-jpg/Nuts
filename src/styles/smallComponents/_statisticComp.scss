@@ -119,3 +119,14 @@
     position: absolute;
   }
 }
+
+@media screen and (max-width: 1023px) {
+  .statistic__block:nth-of-type(3) .statsistic__item_top {
+    padding-right: 0px;
+  }
+
+  .statistic__block:nth-of-type(3) .statistic__item_bottom {
+    width: 206px;
+    margin-left: 0;
+  }
+}

@@ -355,8 +355,39 @@
   .person__center-wrapper {
     padding-left: 20px;
   }
-  .statistic__block:nth-of-type(3) .statsistic__item_top {
-    padding-right: 0px;
+  .about {
+    .statistic__block:nth-of-type(3) .statsistic__item_top {
+      padding-right: 0px;
+    }
+  }
+
+  .about-gallery__gallery-wrapper {
+    width: 996px;
+    justify-content: center;
+  }
+  .about-gallery__gallery-item {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+  }
+
+  .about-gallery__content {
+    width: 996px;
+  }
+
+  .about-gallery__play-int {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: auto;
+      height: auto;
+    }
   }
 }
 

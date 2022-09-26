@@ -168,4 +168,13 @@
   .footer__copyright-text {
     width: 291px;
   }
+
+  .footer {
+    .header__socials-wrapper {
+      margin-top: 1px;
+      display: flex;
+      margin-left: auto;
+      transform: translate(-10px);
+    }
+  }
 }

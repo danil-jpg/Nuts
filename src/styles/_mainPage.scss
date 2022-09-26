@@ -497,8 +497,15 @@
   .benefit__body {
     width: 760px;
   }
+
+  .goal__title {
+    font-size: 2.5rem;
+  }
 }
 @media screen and (max-width: 767px) {
+  html {
+    font-size: 15px;
+  }
   .top__title {
     font-size: 2.375rem;
   }
@@ -587,5 +594,19 @@
   }
   .eco__descr {
     margin-top: 0;
+  }
+
+  .top__title {
+    font-size: 1.7rem;
+  }
+
+  .top__descr {
+    margin-top: 10px;
+    font-size: 1.3rem;
+  }
+
+  .news__bottom {
+    margin-bottom: 20px;
+    margin-top: 30px;
   }
 }

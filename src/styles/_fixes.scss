@@ -1,150 +1,152 @@
-.header__link:nth-of-type(3),
-.header__link:nth-of-type(2) {
-  transform: none;
-}
-
-.top__descr {
-  letter-spacing: 0;
-  font-size: 25px;
-  line-height: 29px;
-  transform: translate(-2px);
-}
-
-.center-text_descr {
-  letter-spacing: 0;
-}
-
-.production__card-name {
-  transform: translate(-4px);
-}
-
-.production__descr {
-  letter-spacing: 0;
-}
-
-.article-title {
-  letter-spacing: 0;
-}
-
-.information__descr_1 {
-}
-
-.information__descr_top {
-  transform: translate(0, -3px);
-}
-
-.information__descr_2 {
-  word-spacing: -0.5px;
-}
-
-.information__descr_bottom {
-  width: 111%;
-}
-
-.production {
-  .center-text_descr {
+@media screen and (min-width: 1919px) {
+  .header__link:nth-of-type(3),
+  .header__link:nth-of-type(2) {
+    transform: none;
   }
-}
-.center-text_descr {
-  letter-spacing: 0.01em;
-}
-.benefit {
-  .center-text_title {
-    letter-spacing: 0.001em;
-    transform: translate(1px);
+
+  .top__descr {
+    letter-spacing: 0;
+    font-size: 25px;
+    line-height: 29px;
+    transform: translate(-2px);
   }
 
   .center-text_descr {
-    word-spacing: 0px;
+    letter-spacing: 0;
   }
-}
 
-.production__descr {
-  letter-spacing: 0.01em;
-}
-
-.header__link:nth-of-type(2),
-.header__link:nth-of-type(3) {
-  transform: translate(-3px);
-}
-
-.top__descr {
-  letter-spacing: 0.01em;
-  transform: translate(-4px);
-}
-
-.article-title {
-  letter-spacing: 0.01em;
-}
-
-.article-descr {
-  letter-spacing: 0.01em;
-}
-
-.article-descr {
-  letter-spacing: 0.01em;
-}
-
-.statistic__block:first-of-type .statsistic__item_top::after {
-  right: 31px;
-}
-
-.statistic__block:nth-of-type(2) .statsistic__item_top::after {
-  right: 41px;
-}
-
-.statistic__block:nth-of-type(3) .statsistic__item_top::after {
-  right: 52px;
-}
-
-.benefit__hover-content {
-  .benefit__text-hover_top {
-    transform: translate(-3px, -30px);
+  .production__card-name {
+    transform: translate(-4px);
   }
-  .benefit__text-hover_bottom {
-    transform: translate(-3px, -44px);
+
+  .production__descr {
+    letter-spacing: 0;
   }
-}
 
-.eco__descr {
-  letter-spacing: 0.001em;
-}
+  .article-title {
+    letter-spacing: 0;
+  }
 
-.news__date {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 500;
-  font-size: rem(13);
-  line-height: lh(22, 13);
-  letter-spacing: 0.01em;
-  margin-left: 24px;
-}
+  .information__descr_1 {
+  }
 
-.news__item-descr {
-  letter-spacing: 0.01em;
-}
+  .information__descr_top {
+    transform: translate(0, -3px);
+  }
 
-.telephones-wrapper {
-  margin-left: -77px;
-}
+  .information__descr_2 {
+    word-spacing: -0.5px;
+  }
 
-.telephone-num {
-  letter-spacing: 0.01em;
-}
+  .information__descr_bottom {
+    width: 111%;
+  }
 
-.contacts__title-text {
-  transform: translate(-2px);
-}
-
-.footer {
-  .header__logo-text {
+  .production {
+    .center-text_descr {
+    }
+  }
+  .center-text_descr {
     letter-spacing: 0.01em;
-    transform: translate(8px);
   }
-}
+  .benefit {
+    .center-text_title {
+      letter-spacing: 0.001em;
+      transform: translate(1px);
+    }
 
-.footer__link:nth-of-type(3),
-.footer__link:nth-of-type(4) {
-  letter-spacing: 0.01em;
-  transform: translate(-5px);
+    .center-text_descr {
+      word-spacing: 0px;
+    }
+  }
+
+  .production__descr {
+    letter-spacing: 0.01em;
+  }
+
+  .header__link:nth-of-type(2),
+  .header__link:nth-of-type(3) {
+    transform: translate(-3px);
+  }
+
+  .top__descr {
+    letter-spacing: 0.01em;
+    transform: translate(-4px);
+  }
+
+  .article-title {
+    letter-spacing: 0.01em;
+  }
+
+  .article-descr {
+    letter-spacing: 0.01em;
+  }
+
+  .article-descr {
+    letter-spacing: 0.01em;
+  }
+
+  .statistic__block:first-of-type .statsistic__item_top::after {
+    right: 31px;
+  }
+
+  .statistic__block:nth-of-type(2) .statsistic__item_top::after {
+    right: 41px;
+  }
+
+  .statistic__block:nth-of-type(3) .statsistic__item_top::after {
+    right: 52px;
+  }
+
+  .benefit__hover-content {
+    .benefit__text-hover_top {
+      transform: translate(-3px, -30px);
+    }
+    .benefit__text-hover_bottom {
+      transform: translate(-3px, -44px);
+    }
+  }
+
+  .eco__descr {
+    letter-spacing: 0.001em;
+  }
+
+  .news__date {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: rem(13);
+    line-height: lh(22, 13);
+    letter-spacing: 0.01em;
+    margin-left: 24px;
+  }
+
+  .news__item-descr {
+    letter-spacing: 0.01em;
+  }
+
+  .telephones-wrapper {
+    margin-left: -77px;
+  }
+
+  .telephone-num {
+    letter-spacing: 0.01em;
+  }
+
+  .contacts__title-text {
+    transform: translate(-2px);
+  }
+
+  .footer {
+    .header__logo-text {
+      letter-spacing: 0.01em;
+      transform: translate(8px);
+    }
+  }
+
+  .footer__link:nth-of-type(3),
+  .footer__link:nth-of-type(4) {
+    letter-spacing: 0.01em;
+    transform: translate(-5px);
+  }
 }

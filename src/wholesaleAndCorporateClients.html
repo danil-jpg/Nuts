@@ -91,9 +91,55 @@
                             </p>
                         </div>
                     </div>
+                    <div class="salePoint__bottom-wrapper">
+                        <div class="salePoint__bottom-left-wrapper">
+                            <div class="salePoint__bottom-text-wrapper">
+                                <p class="salePoint__bottom-text">
+                                    СОК "Орех Причерноморья" предлагает своим клиентам
+                                    выгодные условия сорудничества.
+                                </p>
+                                <p class="salePoint__bottom-text">
+                                    Мы готовы рассмотреть особые
+                                    условия для оптовых покупателей, с готовностью идем на встречу
+                                    к любому предложению.
+                                </p>
+                                <p class="salePoint__bottom-text">
+                                    Особые условия подготовленны для розничных магазинов.
+                                    компаний HoReCa, спорт-клубов.
+                                </p>
+                                <p class="salePoint__bottom-text">
+                                    Если вы заинтересованы в нашей продукции, пишите 
+                                    или звоните
+                                    в наш главный офис, мы всегда пойдем 
+                                    вам на встречу.
+                                </p>
+                            </div>
+                            <button class="salePoint__bottom-btn">
+                                Написать нам
+                            </button>
+                        </div>
+                        <div class="salePoint__bottom-right-wrapper">
+                            <img src="img/wholesale/cart.webp" alt="cart">
+                        </div>
+                    </div>
                 </div>
             </section>
+            <!-- Statistic section -->
+            @@include("smallComponents/statistic.html",{
+                "class" : 'statistic-wholesale'
+                })
+            <!-- Eco section -->
+            @@include("smallComponents/eco.html",{
+                    "class" :  "mainPage-eco wholeSale-eco"
+                })
+            <!-- Contacts -->
+            @@include("smallComponents/contacts.html",{
+                    "class" : ""
+                })
         </main>
+        @@include("smallComponents/footer.html",{
+            "class" : ""
+        })
     </body>
     <script src="scripts/main.js"></script>
 </html>

@@ -143,6 +143,52 @@
   transform: translate(78px);
 }
 
+.salePoint__bottom-wrapper {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  column-gap: 13px;
+  margin-top: 36px;
+}
+.salePoint__bottom-left-wrapper {
+  margin-top: 12px;
+}
+.salePoint__bottom-text-wrapper {
+  width: 84%;
+
+  margin-top: 37px;
+  margin-bottom: 24px;
+}
+
+.salePoint__bottom-text:last-of-type {
+  margin-top: 24px;
+  width: 97%;
+}
+.salePoint__bottom-text {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: lh(24, 16);
+  color: #1a2f3f;
+  margin-bottom: 24px;
+}
+.salePoint__bottom-btn {
+  width: 188px;
+  margin-top: 15px;
+  height: 52px;
+  background: #337d5a;
+  border: 1.5px solid #337d5a;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: em(14, 16);
+  line-height: lh(16, 14);
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+.salePoint__bottom-right-wrapper {
+}
+
 @media screen and (max-width: 1919px) {
   .whosale-nav {
     left: 10%;
@@ -176,10 +222,58 @@
   }
   .salePoint__center-wrapper {
     flex-wrap: wrap;
+    margin-top: 20px;
+
     justify-content: space-evenly;
+  }
+  .salePoint__bottom-wrapper {
+    margin-top: 50px;
+    img {
+      max-width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
   }
 }
 
+.wholeSale-eco {
+  background-image: url(../img/wholesale/wholesale-eco.webp);
+}
+
+@media screen and (min-width: 1920px) {
+  .statistic-wholesale {
+    margin-top: 158px;
+  }
+
+  .wholeSale-eco {
+    margin-top: 87px;
+
+    .eco__content {
+      margin-top: 228px;
+    }
+
+    .eco__title {
+      margin-top: 22px;
+    }
+
+    .eco__descr {
+      margin-top: -17px;
+    }
+  }
+
+  .contacts {
+    margin-top: 81px;
+  }
+}
+@media screen and (max-width: 1919px) {
+  .statistic__content {
+    margin-top: 50px;
+  }
+
+  .wholeSale-eco {
+    margin-top: 70px;
+  }
+}
 @media screen and (max-width: 1439px) {
   .whosale-nav {
     // top: 289px;
@@ -223,6 +317,12 @@
     width: 100%;
     border: 3px solid #337d5a;
   }
+
+  .salePoint__bottom-wrapper {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    margin-top: 175px;
+  }
 }
 
 @media screen and (max-width: 1023px) {
@@ -259,6 +359,22 @@
   .salePoint__center-item-wrapper {
     width: 290px;
   }
+
+  .salePoint__bottom-wrapper {
+    margin-top: 340px;
+  }
+
+  .salePoint__bottom-left-wrapper {
+    order: 2;
+  }
+
+  .salePoint__bottom-text-wrapper {
+    width: 100%;
+  }
+
+  .wholeSale-eco {
+    background-position: center;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -275,5 +391,9 @@
 
   .salePoint__center-wrapper {
     width: 300px;
+  }
+
+  .salePoint__bottom-wrapper {
+    margin-top: 500px;
   }
 }

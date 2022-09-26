@@ -3,6 +3,7 @@ import Swiper, { Navigation, Pagination } from "swiper";
 import burger from "./burger.js";
 import cardSlider from "./cardsSlider.js";
 import newsSlider from "./_newsSlider.js";
+import videoSlider from "./_videoSlider.js";
 
 window.addEventListener("DOMContentLoaded", () => {
   const mainPage = document.querySelector(".mainPage"),
@@ -14,6 +15,8 @@ window.addEventListener("DOMContentLoaded", () => {
   if (mainPage) {
     cardSlider();
     newsSlider();
+    console.log(videoSlider);
+    videoSlider();
   }
   if (shopPage) {
     cardSlider();
@@ -21,5 +24,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
   if (aboutPage) {
     newsSlider();
+    videoSlider();
   }
 });

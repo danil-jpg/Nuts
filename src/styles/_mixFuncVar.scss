@@ -71,6 +71,10 @@
   @return math.div($value, ($value * 0 + 1));
 }
 
+@function em($pxElemValue, $pxParentValue: 16) {
+  @return #{calc($pxElemValue / $pxParentValue)}em;
+}
+
 @function rem($pxValue) {
   @return #{calc(stripUnit($pxValue) / stripUnit(16))}rem;
 }

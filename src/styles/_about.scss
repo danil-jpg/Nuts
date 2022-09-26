@@ -346,6 +346,30 @@
   display: block;
   margin-top: 63px;
 }
+
+.aboutPage-eco {
+  background-image: url(../img/about/nuts-in-hands_about.webp);
+  background-position: center;
+}
+
+.news__content {
+  margin-top: 109px;
+}
+
+@media screen and (min-width: 1919px) {
+  .aboutPage-eco {
+    margin-top: 91px;
+
+    .eco__content {
+      margin: 254px auto 0;
+    }
+
+    .eco__descr {
+      margin-top: -32px;
+    }
+  }
+}
+
 @media screen and (max-width: 1515px) {
   .person__img-wrapper {
     img {

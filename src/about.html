@@ -157,7 +157,19 @@
                     Смотреть всю галерею
                 </button>
             </section>
+            @@include("smallComponents/eco.html",{
+                "class" :  " mainPage-eco aboutPage-eco "
+            })
+            @@include("smallComponents/newsComp.html",{
+                "section-class" : "about-page-news"
+            })
+            @@include("smallComponents/contacts.html",{
+                "class" : "about-page-contacts"
+            })
         </main>
+        @@include("smallComponents/footer.html",{
+            "class" : ""
+        })
     </body>
     <script src="scripts/main.js"></script>
 </html>

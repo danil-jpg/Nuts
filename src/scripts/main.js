@@ -6,7 +6,8 @@ import newsSlider from "./_newsSlider.js";
 
 window.addEventListener("DOMContentLoaded", () => {
   const mainPage = document.querySelector(".mainPage"),
-    shopPage = document.querySelector(".shopPage");
+    shopPage = document.querySelector(".shopPage"),
+    aboutPage = document.querySelector(".about");
 
   burger();
 
@@ -16,5 +17,9 @@ window.addEventListener("DOMContentLoaded", () => {
   }
   if (shopPage) {
     cardSlider();
+  }
+
+  if (aboutPage) {
+    newsSlider();
   }
 });

@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Доставка</title>
     </head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.min.css">
     <!-- header -->
     @@include("smallComponents/header.html",{
@@ -13,6 +14,7 @@
 	})
     <body class="deliveryPage">
         <main>
+            <!-- Name of page -->
             @@include("smallComponents/navigationComp.html",{
 			"class" : "delivery-nav",
 			"title2" : "Оплата и доставка"
@@ -38,9 +40,66 @@
                             <p class="delivery-descr__top-text">Возврат товара</p>
                         </div>
                     </div>
+                    <div class="delivery-descr__center">
+                        <div class="deliver-descr__center-left">
+                            <h4 class="deliver-descr__center-toptext">
+                                Способы оплаты
+                            </h4>
+                            <div class="deliver-descr__center-left_text-wrapper">
+                                <img src="img/delivery/museum.webp" alt="museum" class="deliver-descr__center-img">
+                                <p class="deliver-descr__center-title deliver-title">
+                                    Безналичный расчет
+                                </p>
+                            </div>
+                            <p class="deliver-descr__center-outblock-text deliver-descr__outblock-text">
+                                Вы можете выбрать “получить реквизиты”
+                                <br>
+                                для дальнейшей оплаты на карту, или в терминалах.
+                            </p>
+                            <div class="deliver-descr__center-left_text-wrapper">
+                                <img src="img/delivery/Plastic-card.webp" alt="museum" class="deliver-descr__center-img">
+                                <p class="deliver-descr__center-title deliver-title">
+                                    Оплата с помощью банковской карты
+                                </p>
+                            </div>
+                            <p class="deliver-descr__center-outblock-text deliver-descr__outblock-text">
+                                Оплатите Ваш заказ картой любого банка онлайн
+								(LiqPay/Приват24)
+                            </p>
+                            <div class="deliver-descr__center-left_text-wrapper">
+                                <img src="img/delivery/wallet-payment.webp" alt="museum" class="deliver-descr__center-img">
+                                <p class="deliver-descr__center-title deliver-title">
+                                    Наличный расчет
+                                </p>
+                            </div>
+                            <p class="deliver-descr__center-outblock-text deliver-descr__outblock-text">
+                                Оплата заказов наложенным платежом в отделении
+								Новой Почты, или наличными курьерами
+                            </p>
+                        </div>
+                        <div class="deliver-descr__center-right">
+                            <img src="img/delivery/man-with-laptop.webp" alt="man-with-laptop">
+                        </div>
+                    </div>
                 </div>
             </section>
+            <!-- statistic   -->
+            @@include("smallComponents/statistic.html",{
+				"class" : 'statistic-deliveryPage'
+				})
+            <!-- Gaol component -->
+            @@include("smallComponents/goal.html",{
+				"class" : "mainPage-goal"
+				})
+            <!-- Contacts -->
+            @@include("smallComponents/contacts.html",{
+					"class" : ""
+				})
         </main>
+        <!-- footer -->
+        @@include("smallComponents/footer.html",{
+            "class" : ""
+        })
         <script src="scripts/main.js"></script>
     </body>
 </html>

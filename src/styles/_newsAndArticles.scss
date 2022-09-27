@@ -108,12 +108,82 @@
   margin-top: -5px;
 }
 .newsPage {
-  .news__redirect-wrapper {
+  .news__redirect-wrapper-art {
     margin-left: 0px;
     margin-top: 15px;
   }
 }
+.newsAndArticles__slider {
+  background: none;
 
+  .news__content {
+    margin: 58px auto 0;
+  }
+
+  .news__date,
+  .news__item-title,
+  .news__item-descr,
+  .news__redirect-wrapper {
+    margin-left: 0;
+  }
+
+  .news__date {
+    margin-top: 17px;
+  }
+
+  .news__item_3 {
+    margin-left: -0px;
+  }
+}
+
+.news__interview {
+}
+.news__interview-content {
+  width: 1290px;
+  margin: 0 auto;
+
+  margin-top: 24px;
+  .about-gallery__play-text-wrapper {
+    margin-top: 26px;
+  }
+
+  .about-gallery__play-text {
+    margin-top: -10px;
+  }
+}
+
+.interview__btn {
+  margin: 0 auto;
+  display: block;
+  margin-top: 66px;
+  width: 199px;
+  height: 52px;
+  border: 1.5px solid #337d5a;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: em(15, 16);
+  line-height: lh(18, 15);
+  letter-spacing: 0.02em;
+  background: transparent;
+
+  color: #337d5a;
+}
+.newsAndArticle-contacts {
+  margin: 91px 0 0;
+  background: #fbfbfb;
+
+  display: inline-block;
+  .contacts__content {
+    margin-top: 89px;
+  }
+}
+
+.newsAndArticlesPage {
+  .footer {
+    margin-top: 133px;
+  }
+}
 @media screen and (max-width: 1439px) {
   .newsPage__content {
     width: 996px;
@@ -153,6 +223,10 @@
   .newsAndArticle-nav {
     display: none;
   }
+
+  .news__interview-content {
+    width: 996px;
+  }
 }
 
 @media screen and (max-width: 1023px) {
@@ -170,6 +244,9 @@
   .newsPage__text {
     width: 100%;
   }
+  .news__interview-content {
+    width: 760px;
+  }
 }
 @media screen and (max-width: 767px) {
   .newsPage__content {
@@ -178,6 +255,28 @@
 
   .newsPage__top-title {
     font-size: 2rem;
+  }
+
+  .news__interview-content {
+    width: 320px;
+  }
+
+  .interview__btn {
+    margin-top: 40px;
+    width: 150px;
+    height: 40px;
+    font-size: 0.8em;
+  }
+
+  .newsAndArticle-contacts {
+    margin: 45px 0 0;
+    .contacts__content {
+      margin-top: 25px;
+    }
+  }
+
+  .newsAndArticlesPage .footer {
+    margin-top: 50px;
   }
 }
 // @media screen and (max-width: ) {

@@ -351,9 +351,10 @@
   background-image: url(../img/about/nuts-in-hands_about.webp);
   background-position: center;
 }
-
-.news__content {
-  margin-top: 109px;
+.about {
+  .news__content {
+    margin-top: 109px;
+  }
 }
 
 @media screen and (min-width: 1919px) {

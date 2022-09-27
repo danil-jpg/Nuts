@@ -14,3 +14,128 @@
 .delivery-nav {
   width: 217px;
 }
+
+.delivery-descr {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+.delivery-descr__content {
+  width: 1290px;
+  margin: 70px auto 74px;
+}
+.delivery-descr__top-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  width: per(1052, 1290);
+  margin: 0 auto;
+}
+
+.delivery-descr::after {
+  width: 100vw;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  content: "";
+  position: absolute;
+  top: 134px;
+  left: 0;
+}
+.deliver-descr__top-item-wrapper:nth-of-type(1)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -4%;
+  width: 105%;
+  border: 1px solid #337d5a;
+}
+.deliver-descr__top-item-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-right: 15px;
+  }
+}
+.delivery-descr__top-img {
+  margin-right: 15px;
+}
+.deliver-descr__top-item-wrapper:nth-of-type(2) {
+  transform: translate(9px);
+  p {
+    transform: translate(4px);
+  }
+}
+.delivery-descr__top-text {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: em(20, 16);
+  line-height: lh(23, 20);
+  letter-spacing: 0.01em;
+  color: #1a2f3f;
+  margin-top: 23px;
+}
+
+@media screen and (max-width: 1920px) {
+}
+
+@media screen and (max-width: 1439px) {
+  .delivery-descr__content {
+    width: 996px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .delivery-descr__content {
+    width: 760px;
+  }
+
+  .delivery-descr__top-wrapper {
+    width: 90.550388%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .delivery-descr__content {
+    width: 300px;
+    margin: 29px auto 74px;
+  }
+
+  .delivery-descr__top-wrapper {
+    font-size: 13px;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+  }
+
+  .deliver-descr__top-item-wrapper {
+    margin-right: 7px;
+  }
+  .deliver-descr__top-item-wrapper:nth-of-type(2) {
+    transform: none;
+
+    p {
+      transform: none;
+    }
+  }
+  .delivery-descr::after {
+    width: 0vw;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    content: "";
+    position: absolute;
+    top: 134px;
+    left: 0;
+  }
+}
+
+// @media screen and (max-width: px) {
+// }
+
+// @media screen and (max-width: px) {
+// }
+
+// @media screen and (max-width: px) {
+// }

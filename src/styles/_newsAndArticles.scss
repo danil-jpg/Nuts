@@ -1,0 +1,115 @@
+.newsAndArticle-nav {
+  color: #8a8a8a;
+  width: 208px;
+}
+.newsPage__content {
+  margin: 0 auto;
+  width: 1290px;
+}
+.newsPage__top-title {
+  text-align: center;
+}
+
+.newsPage {
+  margin-top: 64px;
+}
+
+.newsPage__top-text {
+  margin-top: -24px;
+}
+.newsPage__center-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.newsPage__left {
+  img {
+  }
+}
+.newsPage__right {
+}
+.newsPage__date {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: em(13, 16);
+  line-height: lh(22, 13);
+  letter-spacing: 0.01em;
+  color: #8a8a8a;
+}
+.newsPage__title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: em(22, 16);
+  line-height: lh(26, 22);
+  letter-spacing: 0.01em;
+  color: #1a2f3f;
+}
+.newsPage__text {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: lh(25, 16);
+  color: #1a2f3f;
+}
+.news__redirect-wrapper {
+}
+.news__redirect-text {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: em(14, 16);
+  line-height: lh(20, 14);
+  letter-spacing: 0.01em;
+  color: #1a2f3f;
+}
+
+.newsPage__content {
+  width: 1325px;
+}
+.newsPage__content {
+}
+.newsPage__text-wrapper {
+}
+.newsPage__top-title {
+}
+.center-text_title {
+}
+.newsPage__top-text {
+}
+.center-text_descr {
+}
+.newsPage__center-wrapper {
+  grid-template-columns: 2.3fr 1fr;
+  margin-top: 64px;
+}
+.newsPage__left {
+  img {
+    margin-left: 17px;
+  }
+}
+.newsPage__right {
+  margin-top: 59px;
+  margin-left: -7px;
+}
+.newsPage__date {
+}
+.newsPage__title {
+  width: 321px;
+  margin-top: 19px;
+  letter-spacing: 0.001em;
+}
+.newsPage__text {
+  width: 408px;
+}
+.newsPage__text-2 {
+  margin-top: -5px;
+}
+.news__redirect-wrapper {
+  margin-left: 0px;
+  margin-top: 15px;
+}
+.news__redirect-text {
+}

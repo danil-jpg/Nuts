@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Новости и статьи</title>
+        <link rel="stylesheet" href="styles/main.min.css">
+    </head>
+    <!-- header -->
+    @@include("smallComponents/header.html",{
+		"class" : ""
+	})
+    <body class="newsAndArticlesPage">
+        <main>
+            <!-- PAge name -->
+            @@include("smallComponents/navigationGrey.html",{
+			"class" : "newsAndArticle-nav",
+			'title2' : "Новости и статьи"
+		})
+            <section class="newsPage">
+                <div class="newsPage__content">
+                    <div class="newsPage__text-wrapper">
+                        <p class="newsPage__top-title center-text_title">
+                            Новости и статьи
+                        </p>
+                        <p class="newsPage__top-text center-text_descr">
+                            Свежие новости и полезная информация
+                        </p>
+                    </div>
+                    <div class="newsPage__center-wrapper">
+                        <div class="newsPage__left">
+                            <img src="img/newsAndArticles/Flag.webp" alt="">
+                        </div>
+                        <div class="newsPage__right">
+                            <p class="newsPage__date">
+                                12.04.2019
+                            </p>
+                            <p class="newsPage__title">
+                                Центр поддержки экспорта, 
+							в студии Павел Тулба
+                            </p>
+                            <p class="newsPage__text">
+                                Сельскохозяйственный обслуживающий кооператив 
+							“Орех Причерноморья” предлагает своим клиентам 
+							выгодные условия сотрудничества.
+                            </p>
+                            <p class="newsPage__text newsPage__text-2">
+                                Ореховый бизнес – один из наиболее перспективных 
+							в Украине. Ежегодная нехватка продукта в Европе составляет 100 000 тонн. У Вас есть возможность зарабатывать десятки тысяч долларов в год всего
+                                <br>
+                                на нескольких гектарах земли.
+                            </p>
+                            <div class="news__redirect-wrapper">
+                                <p class="news__redirect-text">
+                                    <a>Читать</a>
+                                </p>
+                                <img src="img/mainPage/arrow-left-black.webp" alt="arrow">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>

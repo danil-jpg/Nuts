@@ -86,6 +86,7 @@
 .salePoint__center-wrapper {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 .salePoint__center-item-wrapper {
   font-family: "Raleway";
@@ -239,6 +240,17 @@
 .wholeSale-eco {
   background-image: url(../img/wholesale/wholesale-eco.webp);
 }
+.salePoint {
+  position: relative;
+}
+.salePoint::after {
+  content: "";
+  position: absolute;
+  bottom: 51.5%;
+  left: 0;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  width: 100%;
+}
 
 @media screen and (min-width: 1920px) {
   .statistic-wholesale {
@@ -273,7 +285,17 @@
   .wholeSale-eco {
     margin-top: 70px;
   }
+  .salePoint::after {
+    content: "";
+    position: absolute;
+    bottom: 51.5%;
+    left: 0;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    width: 100%;
+    display: none;
+  }
 }
+
 @media screen and (max-width: 1439px) {
   .whosale-nav {
     // top: 289px;

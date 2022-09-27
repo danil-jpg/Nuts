@@ -15,11 +15,11 @@ window.addEventListener("DOMContentLoaded", () => {
   if (mainPage) {
     cardSlider();
     newsSlider();
-    console.log(videoSlider);
     videoSlider();
   }
   if (shopPage) {
     cardSlider();
+    videoSlider();
   }
 
   if (aboutPage) {

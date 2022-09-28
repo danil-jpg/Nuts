@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Галерея</title>
+        <link rel="stylesheet" href="styles/main.min.css">
+    </head>
+    <!-- header -->
+    @@include("smallComponents/header.html",{
+			"class" : ""
+		})
+    <body class="gallery">
+        <!-- PAge name -->
+        <section class="gallery-banner">
+            @@include("smallComponents/navigationComp.html",{
+				"class" : "gallery-nav",
+				'title2' : "Галерея"
+})
+            <div class="gallery-banner__text-wrapper">
+                <p class="gallery-banner-title top__title">
+                    Галерея
+                </p>
+                <p class="gallery-banner-text top__descr">
+                    Кадры социальной активности компании
+                </p>
+            </div>
+        </section>
+    </body>
+</html>

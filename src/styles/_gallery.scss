@@ -1,0 +1,45 @@
+.gallery-banner {
+  background-image: url(../img/gallery/greenHouse.webp);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 100%;
+  display: inline-block;
+}
+.gallery-banner__text-wrapper {
+  margin-top: 238px;
+}
+.gallery-banner-title {
+  text-align: center;
+  transform: translate(-7px);
+}
+
+.gallery-banner-text {
+  transform: translate(4px);
+  margin-top: -47px;
+}
+
+.gallery-nav {
+  color: white;
+  width: 142px;
+}
+
+@media screen and (max-width: 1023px) {
+  .gallery-banner {
+    height: auto;
+    min-height: 300px;
+  }
+  .gallery-banner__text-wrapper {
+    margin-top: 100px;
+  }
+
+  .gallery-banner__text-wrapper {
+    transform: none;
+  }
+
+  .gallery-banner-text {
+    transform: translate(0px);
+    margin-top: -16px;
+  }
+}

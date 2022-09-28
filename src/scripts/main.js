@@ -4,7 +4,6 @@ import burger from "./burger.js";
 import cardSlider from "./cardsSlider.js";
 import newsSlider from "./_newsSlider.js";
 import videoSlider from "./_videoSlider.js";
-
 window.addEventListener("DOMContentLoaded", () => {
   const mainPage = document.querySelector(".mainPage"),
     shopPage = document.querySelector(".shopPage"),

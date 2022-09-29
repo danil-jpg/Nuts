@@ -215,7 +215,8 @@
   font-size: 1.1rem;
   line-height: 1.41875;
   height: 315px;
-  overflow: scroll;
+
+  overflow-y: scroll;
 }
 .nuts-descr__text:first-of-type {
   margin-top: 0px;

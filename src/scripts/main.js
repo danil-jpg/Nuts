@@ -8,7 +8,8 @@ window.addEventListener("DOMContentLoaded", () => {
   const mainPage = document.querySelector(".mainPage"),
     shopPage = document.querySelector(".shopPage"),
     aboutPage = document.querySelector(".about"),
-    newsAndArticlesPage = document.querySelector(".newsAndArticlesPage");
+    newsAndArticlesPage = document.querySelector(".newsAndArticlesPage"),
+    itemInfoPage = document.querySelector(".itemPage");
 
   if (mainPage) {
     cardSlider();
@@ -54,5 +55,19 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  burger();
+  if (itemInfoPage) {
+    let swiper = new Swiper(".item-info__card .swiper-production", {
+      slidesPerView: 1,
+      centeredSlides: false,
+      loop: true,
+      direction: "horizontal",
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      modules: [Navigation, Pagination],
+    });
+  }
+
+  // burger();
 });

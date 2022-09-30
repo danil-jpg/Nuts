@@ -69,5 +69,5 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // burger();
+  burger();
 });

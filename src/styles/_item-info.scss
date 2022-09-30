@@ -572,4 +572,9 @@
     position: relative;
     z-index: 1;
   }
+  .item-info__center-char-wrapper:nth-of-type(3) {
+    .item-info__center-descr {
+      width: 85%;
+    }
+  }
 }

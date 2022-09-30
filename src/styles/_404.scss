@@ -1,0 +1,52 @@
+.main-404 {
+}
+.main-404__content {
+  width: 1290px;
+  margin: 0 auto;
+}
+.main-404__img {
+  display: block;
+  margin: 0 auto;
+  margin: 110px auto 0;
+}
+.main-404__text {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: em(18);
+  line-height: lh(30, 18);
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #1a2f3f;
+  margin-top: 35px;
+}
+.main-404__btn {
+  width: 332px;
+  height: 50px;
+  border: 1.5px solid #337d5a;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: lh(17, 16);
+  color: #337d5a;
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+  margin: 0 auto;
+  padding: 14px 22px 22px 26px;
+}
+
+.main-404-contacts {
+  background: #fbfbfb;
+  display: inline-block;
+  .contacts__content {
+    margin-top: 89px;
+    /* background: #FBFBFB; */
+  }
+  margin: 99px 0 0;
+}
+
+.main-404__footer {
+  margin-top: 132px;
+}

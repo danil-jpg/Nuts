@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>404</title>
+        <link rel="stylesheet" href="styles/main.min.css">
+    </head>
+    <!-- header -->
+    @@include("smallComponents/header.html",{
+		"class" : ""
+})
+    <body class="404">
+        <main>
+            <section class="main-404">
+                <div class="main-404__content">
+                    <img src="img/404/404.webp" alt="404" class="main-404__img">
+                    <p class="main-404__text">
+                        Страница не найдена
+                    </p>
+                    <button class="main-404__btn">
+                        <img src="img/404/arrow-right-green.webp" alt="arrow">
+                        Вернуться на Главную страницу
+                    </button>
+                </div>
+            </section>
+            @@include("smallComponents/contacts.html",{
+                "class" : "item-info-contacts main-404-contacts"
+            })
+            <!-- margin: 79px 0 0; -->
+        </main>
+        @@include("smallComponents/footer.html",{
+            "class" : "main-404__footer"
+        })
+        <script src="scripts/main.js"></script>
+    </body>
+</html>

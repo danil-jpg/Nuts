@@ -50,3 +50,37 @@
 .main-404__footer {
   margin-top: 132px;
 }
+
+@media screen and (max-width: 1439px) {
+  .main-404__content {
+    width: 912px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .main-404__content {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main-404__content {
+    width: 300px;
+    img {
+      max-width: 100%;
+      margin-top: 50px;
+    }
+  }
+
+  .main-404__btn {
+    max-width: 95%;
+    font-size: 13px;
+  }
+  .main-404-contacts {
+    margin-top: 1px;
+  }
+
+  .main-404__footer {
+    margin-top: 25px;
+  }
+}

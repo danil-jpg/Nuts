@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Заказ принят</title>
+        <link rel="stylesheet" href="styles/main.min.css">
+    </head>
+    <!-- header -->
+    @@include("smallComponents/header.html",{
+		"class" : ""
+})
+    <body class="404 orderAccPage">
+        <main>
+            <section class="order">
+                <div class="top">
+                    <div class="top__body-text order__text-wrapper ">
+                        <p class="top__title">Благодарим Вас за заказ!</p>
+                        <p class="top__descr">
+                            Наши менеджеры свяжутся с Вами 
+							в ближайшее время
+                        </p>
+                    </div>
+                </div>
+            </section>
+            @@include("smallComponents/contacts.html",{
+                "class" : "item-info-contacts main-404-contacts"
+            })
+            <!-- margin: 79px 0 0; -->
+        </main>
+        @@include("smallComponents/footer.html",{
+            "class" : "main-404__footer"
+        })
+        <script src="scripts/main.js"></script>
+    </body>
+</html>

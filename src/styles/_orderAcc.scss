@@ -1,0 +1,64 @@
+.order {
+  .top {
+    background-image: url(../img/wholesale/whosale-top-banner.webp);
+    background-repeat: no-repeat;
+
+    height: 518px;
+    min-height: 0;
+    background-position: 0;
+  }
+}
+
+.order__text-wrapper {
+  margin-top: 216px;
+  .top__title {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 800;
+    font-size: em(45);
+    line-height: lh(32, 45);
+    letter-spacing: 0.01em;
+    color: #ffffff;
+  }
+  .top__descr {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 500;
+    font-size: em(24);
+    line-height: lh(30, 24);
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+    width: 408px;
+    margin-top: -14px;
+    letter-spacing: 0;
+  }
+}
+
+.orderAccPage {
+  .main-404-contacts {
+    margin: 4px 0 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .order {
+    .top {
+      height: 300px;
+      background-position: center;
+    }
+  }
+
+  .order__text-wrapper {
+    font-size: 12px;
+    margin-top: 100px;
+    .top__descr {
+      width: 100%;
+    }
+  }
+  .orderAccPage {
+    .contacts__content {
+      margin-top: 20px;
+    }
+  }
+}

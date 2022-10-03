@@ -4,6 +4,7 @@ import burger from './burger.js'
 import cardSlider from './cardsSlider.js'
 import newsSlider from './_newsSlider.js'
 import videoSlider from './_videoSlider.js'
+import headerPop from './_headerPopUp.js'
 window.addEventListener('DOMContentLoaded', () => {
   const mainPage = document.querySelector('.mainPage')
   const shopPage = document.querySelector('.shopPage')
@@ -67,6 +68,6 @@ window.addEventListener('DOMContentLoaded', () => {
       modules: [Navigation, Pagination]
     })
   }
-
+  headerPop()
   burger()
 })

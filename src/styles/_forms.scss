@@ -395,6 +395,19 @@
 .basket__table-title-mobile {
   display: none;
 }
+.basket-contacts {
+  background: #fbfbfb;
+  .contacts__left {
+    margin-top: 90px;
+  }
+  .contacts__right {
+    margin-top: 101px;
+  }
+}
+
+.basket-footer {
+  margin-top: 121px;
+}
 @media screen and (max-width: 1439px) {
   .basket__content {
     width: 996px;
@@ -648,5 +661,13 @@
         width: 100%;
       }
     }
+  }
+  .basket-contacts {
+    .contacts__left {
+      margin-top: 10px;
+    }
+  }
+  .basket-footer {
+    margin-top: 40px;
   }
 }

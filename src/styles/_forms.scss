@@ -408,6 +408,18 @@
 .basket-footer {
   margin-top: 121px;
 }
+
+.orderBasketPage {
+  .basket-comp {
+    width: 127px;
+  }
+  .basket__bottom {
+    justify-content: flex-end;
+  }
+  .basket-order__bottom-btn {
+    display: none;
+  }
+}
 @media screen and (max-width: 1439px) {
   .basket__content {
     width: 996px;

@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Заказ</title>
+        <title>Оформление заказа</title>
         <link rel="stylesheet" href="styles/main.min.css">
     </head>
     <header class="header @@class">
@@ -115,7 +115,7 @@
                     <p class="pop-up__total-summ">175</p>
                     <p class="pop-up__uan">грн.</p>
                     <button class="pop-up__btn">
-                        <a href="basket.html">
+                        <a href="#">
                             Перейти в корзину
                         </a>
                     </button>
@@ -225,7 +225,7 @@
                         <p class="pop-up__total-summ">175</p>
                         <p class="pop-up__uan">грн.</p>
                         <button class="pop-up__btn">
-                            <a href="basket.html">
+                            <a href="#">
                                 Перейти в корзину
                             </a>
                         </button>
@@ -294,7 +294,7 @@
     </div>
 </div>
 </header>
-<body class="basketPage orderBasketPage">
+<body class="basketPage orderBasketPage orderingPage">
     <main>
         <div class="navigation-comp basket-comp">
             <p class="navigation__start">
@@ -302,14 +302,18 @@
             </p>
             <img src="img/newsAndArticles/right-arrow-grey.webp" alt="arrow" class="navigation__line">
             <p class="navigation__end">
-                Заказ
+                Корзина
+            </p>
+            <img src="img/newsAndArticles/right-arrow-grey.webp" alt="arrow" class="navigation__line">
+            <p class="navigation__end">
+                Оформление заказа
             </p>
         </div>
         <section class="basket">
             <div class="basket__content">
                 <div class="basket__top-wrapper">
                     <p class="basket__title">
-                        Заказ №1245
+                        Оформление заказа
                     </p>
                     <div class="basket__block-wrapper">
                         <p class="basket__block-title">
@@ -424,8 +428,8 @@
                         </p>
                     </div>
                 </div>
-                <div class="basket__bottom basket__bottom-order">
-                    <button class="basket__bottom-btn basket-order__bottom-btn basket-order__bottom-btn-spec">
+                <div class="basket__bottom">
+                    <button class="basket__bottom-btn basket-order__bottom-btn">
                         <img src="img/forms/right-arrow.webp">
                         <a href="">Продолжить покупки</a>
                     </button>
@@ -433,132 +437,20 @@
                         <p class="pop-up__total">Всего</p>
                         <p class="pop-up__total-summ">175</p>
                         <p class="pop-up__uan">грн.</p>
-                        <button class="pop-up__btn">
-                            <a href="basket.html">
-                                Оформить заказ
-                            </a>
-                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="contacts basket-contacts">
-        <div class="contacts__content">
-            <div class="contacts__left">
-                <p class="contacts__title news__title">
-                    Контакты
-                </p>
-                <div class="contacts__connections-wrapper">
-                    <img src="img/mainPage/telephone-desctop.webp" alt="telephone" class="contacts__telephone-icon">
-                    <div class="telephones-wrapper">
-                        <p class="telephone-num ">
-                            +38 (095) 711 11 11
-                        </p>
-                        <p class="telephone-num">
-                            +38 (095) 711 11 11
-                        </p>
-                    </div>
-                    <div class="contacts__messangers-wrapper">
-                        <img src="img/header/viber.webp" alt="viber">
-                        <img src="img/header/telegram.webp" alt="telegram">
-                        <img src="img/header/whatsapp.webp" alt="whatsapp">
-                    </div>
-                </div>
-                <div class="contacts__email-wrapper">
-                    <img src="img/mainPage/envelope.webp" alt="envelope">
-                    <p class="contacts__email contacts__descr-font">
-                        <a>
-                            nuts@nbsc.com.ua
-                        </a>
-                    </p>
-                </div>
-                <div class="contacts__adress-wrapper">
-                    <div class="contacts__title-wrapper">
-                        <img src="img/mainPage/house.webp" alt="house">
-                        <p class="contacts__title-text">Офис и отдел продаж</p>
-                    </div>
-                    <p class="contacts__adress contacts__descr-font">
-                        Украина, г. Одесса,
-                        ул. Космонавтов, 32
-                    </p>
-                </div>
-                <div class="contacts__production-wrapper">
-                    <div class="contacts__item-production-wrapper">
-                        <img src="img/mainPage/tree-icon.webp" alt="house">
-                        <p class="contacts__production-text">Производство</p>
-                    </div>
-                    <p class="contacts__production-adress contacts__descr-font">
-                        Украина, Одесская обл,
-                        <br>
-                        с. Яськи, ул. Центральная, 232
-                    </p>
-                </div>
-            </div>
-            <div class="contacts__right">
-                <iframe
-                    src="https://my.atlistmaps.com/map/eea9fc4a-9abb-49e2-b265-f75da774a6b4?share=true"
-                    allow="geolocation"
-                    width="100%"
-                    height="400px"
-                    frameborder="0"
-                    scrolling="no"
-                    allowfullscreen
-                ></iframe>
-            </div>
+    <section class="ordering-page">
+        <div class="ordering-page__content">
+            <p class="ordering-page__title">1. Контактные данные</p>
+            <input type="text" placeholder="ФИО*" class="ordering-page__input">
+            <input type="text" placeholder="Email*" class="ordering-page__input">
+            <input type="text" placeholder="Телефон*" class="ordering-page__input">
         </div>
     </section>
 </main>
-</body>
-<footer class="footer basket-footer">
-    <nav class="footer__nav">
-        <div class="header__logo-wrapper footer__logo-wrapper">
-            <img src="img/header/logo-img.webp" alt="logo" class="header__logo">
-            <a href="index.html">
-                <p class="header__logo-text">
-                    ОРЕХ 
-                    ПРИЧЕРНОМОРЬЯ
-                </p>
-            </a>
-        </div>
-        <div class="burger-trigger_footer ">
-            <img src="img/header/menu.webp" alt="menu" class="">
-        </div>
-        <p class="footer__link">
-            <a href="shop.html">Магазин</a>
-        </p>
-        <p class="footer__link">
-            <a href="about.html">Корпоративным клиентам</a>
-        </p>
-        <p class="footer__link">
-            <a href="delivery.html"> Оплата и доставка</a>
-        </p>
-        <p class="footer__link">
-            <a> О производстве</a>
-        </p>
-        <p class="footer__link">
-            <a href="newsAndArticles.html"> Новости и статьи</a>
-        </p>
-        <p class="footer__link">
-            <a href="gallery.html"> Галерея</a>
-        </p>
-    </nav>
-    <div class="footer__hor-line"></div>
-    <div class="footer__copyright">
-        <div class="footer__author">
-            Разработано
-            <span>AVADA</span>
-            <span>MEDIA</span>
-        </div>
-        <p class="footer__copyright-text">
-            Copyright © 2019. Все права защищены
-        </p>
-        <div class="header__socials-wrapper">
-            <img src="img/header/facebook.webp" alt="facebook" class="header__social">
-            <img src="img/header/instagram.webp" alt="inst" class="header__social">
-            <img src="img/header/youtube.webp" alt="youtube" class="header__social">
-        </div>
-    </div>
-</footer>
 <script src="scripts/main.js"></script>
+</body>
 </html>

@@ -409,15 +409,35 @@
   margin-top: 121px;
 }
 
-.orderBasketPage {
+.orderingPage {
   .basket-comp {
     width: 127px;
+    width: 314px;
   }
   .basket__bottom {
     justify-content: flex-end;
   }
   .basket-order__bottom-btn {
     display: none;
+  }
+}
+.basket__bottom-order {
+  justify-content: flex-end;
+}
+.basket-order__bottom-btn-spec {
+  display: none;
+}
+.orderingPage {
+  .basket__bottom .pop-up__bottom {
+    padding-left: 0;
+    width: 143px;
+  }
+  .basket-comp {
+    width: 127px;
+    width: 314px;
+  }
+  .basket__top-wrapper {
+    width: 53.4%;
   }
 }
 @media screen and (max-width: 1439px) {

@@ -596,10 +596,35 @@ input.radio-input:checked::before {
 
 .inputs-to-show.active {
   display: block;
+  transform: translate(0, 15px);
 }
 
 .inputToHide.active {
   display: none;
+}
+
+.inputs-wrapper__spec {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 393px;
+
+  p {
+    margin-left: 11px;
+  }
+
+  label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    transform: translate(10px, 7px);
+  }
+}
+.orderingPage-contacts {
+  margin-top: 100px;
 }
 
 @media screen and (max-width: 1439px) {
@@ -646,6 +671,14 @@ input.radio-input:checked::before {
 
   .authorize__text-wrapper {
     width: 38.837209%;
+  }
+
+  .orderingPage .basket__top-wrapper {
+    width: 100%;
+  }
+
+  .ordering-page__content {
+    width: 996px;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -705,6 +738,48 @@ input.radio-input:checked::before {
 
   .authorize__text-wrapper {
     width: 48.837209%;
+  }
+
+  .orderingPage .basket-comp {
+    display: none;
+  }
+
+  .basket__block-wrapper {
+    align-items: center;
+  }
+
+  .ordering-page__top-wrapper {
+    width: 760px;
+    margin: 0 auto;
+  }
+
+  .ordering-page__delivery-wrapper {
+    width: 760px;
+    margin: 0 auto;
+  }
+
+  .ordering-page__payment-wrapper {
+    width: 760px;
+    margin: 0 auto;
+  }
+
+  .ordering-page__content {
+    width: 760px;
+    text-align: center;
+
+    .ordering-page__input {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .inputs-wrapper {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .inputs-wrapper-payment {
+      justify-content: center;
+    }
   }
 }
 @media screen and (max-width: 767px) {
@@ -863,5 +938,52 @@ input.radio-input:checked::before {
   }
   .basket-footer {
     margin-top: 40px;
+  }
+
+  .orderingPage {
+    .basket__title {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .ordering-page__content {
+      width: 300px;
+    }
+
+    .ordering-page__top-wrapper {
+      width: 300px;
+    }
+
+    .ordering-page__input {
+      width: 100%;
+    }
+
+    .ordering-page__delivery-wrapper {
+      width: 300px;
+    }
+
+    .inputs-wrapper {
+      width: 100%;
+    }
+
+    .ordering-page__payment-wrapper {
+      width: 300px;
+    }
+
+    .radio-input {
+      min-width: 15px;
+    }
+    .inputs-wrapper:last-of-type {
+      justify-content: flex-start;
+    }
+    .specIdP {
+      transform: none;
+      margin-left: 11px;
+    }
+    .inputs-wrapper-payment:nth-of-type(3) {
+      p {
+        width: 203px;
+      }
+    }
   }
 }

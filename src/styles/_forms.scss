@@ -486,6 +486,14 @@
 
 .ordering-page__delivery-wrapper {
   margin-top: 52px;
+
+  .inputs-wrapper:last-of-type {
+    margin-top: -15px;
+  }
+}
+
+.specIdP {
+  transform: translate(-207px);
 }
 
 input.radio-input {
@@ -541,6 +549,57 @@ input.radio-input:checked::before {
 
 .ordering-page__input-adreess:first-of-type {
   margin-top: 1px;
+}
+
+.ordering-page__payment-wrapper {
+  margin-top: 35px;
+}
+
+.inputs-wrapper-payment {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  input {
+    margin-right: 11px;
+  }
+}
+.inputs-wrapper-payment:first-of-type {
+  margin-top: -13px;
+}
+
+.inputs-wrapper-payment:nth-of-type(2) {
+  margin-top: -15px;
+}
+
+.inputs-wrapper-payment:nth-of-type(3) {
+  margin-top: -18px;
+}
+
+.orderingPage-btn {
+  width: 249px;
+  height: 50px;
+  background: #337d5a;
+  border: 0.5px solid #337d5a;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 17px;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-left: 2px;
+}
+
+.inputs-to-show {
+  display: none;
+}
+
+.inputs-to-show.active {
+  display: block;
+}
+
+.inputToHide.active {
+  display: none;
 }
 
 @media screen and (max-width: 1439px) {

@@ -11,6 +11,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const aboutPage = document.querySelector('.about')
   const newsAndArticlesPage = document.querySelector('.newsAndArticlesPage')
   const itemInfoPage = document.querySelector('.itemPage')
+  const orderingPage = document.querySelector('.orderingPage')
 
   if (mainPage) {
     cardSlider()
@@ -66,6 +67,25 @@ window.addEventListener('DOMContentLoaded', () => {
         prevEl: '.swiper-button-prev'
       },
       modules: [Navigation, Pagination]
+    })
+  }
+
+  if (orderingPage) {
+    const inputsToShow = document.querySelector('.inputs-to-show ')
+    const inputToHide = document.querySelector('.inputToHide')
+    const radio = document.querySelector('#radioPost')
+    const restRadio = document.querySelectorAll('.rest-input')
+
+    radio.addEventListener('click', () => {
+      inputToHide.classList.add('active')
+      inputsToShow.classList.add('active')
+    })
+
+    restRadio.forEach((item) => {
+      item.addEventListener('click', () => {
+        inputToHide.classList.remove('active')
+        inputsToShow.classList.remove('active')
+      })
     })
   }
   headerPop()

@@ -444,10 +444,40 @@
     </section>
     <section class="ordering-page">
         <div class="ordering-page__content">
-            <p class="ordering-page__title">1. Контактные данные</p>
-            <input type="text" placeholder="ФИО*" class="ordering-page__input">
-            <input type="text" placeholder="Email*" class="ordering-page__input">
-            <input type="text" placeholder="Телефон*" class="ordering-page__input">
+            <div class="ordering-page__top-wrapper">
+                <p class="ordering-page__title">1. Контактные данные</p>
+                <input type="text" placeholder="ФИО*" class="ordering-page__input">
+                <input type="text" placeholder="Email*" class="ordering-page__input">
+                <input type="text" placeholder="Телефон*" class="ordering-page__input">
+            </div>
+            <div class="ordering-page__delivery-wrapper">
+                <p class="ordering-page__title">2. Способ доставки</p>
+                <div class="inputs-wrapper">
+                    <input type="radio" name="contacts" class="radio-input">
+                    <label for="" class="ordering-page__radio-text">Новая почта (по Украине оплата за счет Клиента)</label>
+                </div>
+                <div class="inputs-wrapper">
+                    <input
+                        type="radio"
+                        name="contacts"
+                        class="radio-input"
+                        checked
+                    >
+                    <label for="" class="ordering-page__radio-text">
+                        <p>
+                            Курьер по Одессе
+                        </p>
+                        <img src="img/forms/free-flag.webp" alt="free">
+                    </label>
+                </div>
+                <input type="text" placeholder="Адрес*" class="ordering-page__input ordering-page__input-adreess">
+                <!-- <div class="inputs-wrapper">
+                    <input type="radio" name="contacts" class="radio-input">
+                    <label for="" class="ordering-page__radio-text">Новая почта (по Украине оплата за счет Клиента)</label>
+                    <input type="radio" name="contacts" class="radio-input">
+                    <input type="radio" name="contacts" class="radio-input">
+                </div> -->
+            </div>
         </div>
     </section>
 </main>

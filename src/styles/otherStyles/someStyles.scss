@@ -7492,7 +7492,9 @@ input.radio-input:checked::before {
         }
     }
 }
-
+.entry-main__btn:visited {
+    color: white;
+}
 .water-recovery-main__text-1 {
     background-image: url(../../img/joint/locked.svg);
 }

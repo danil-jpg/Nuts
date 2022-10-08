@@ -16,6 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const itemInfoPage = document.querySelector('.itemPage')
   const orderingPage = document.querySelector('.orderingPage')
   const regPage = document.querySelector('.registration-page')
+  const adressPage = document.querySelector('.adressPage')
 
   if (mainPage) {
     cardSlider()
@@ -97,6 +98,10 @@ window.addEventListener('DOMContentLoaded', () => {
     regTab()
     option()
   }
+  if (adressPage) {
+    option()
+  }
+
   headerPop()
   burger()
 })

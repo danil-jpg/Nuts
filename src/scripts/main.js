@@ -5,6 +5,9 @@ import cardSlider from './cardsSlider.js'
 import newsSlider from './_newsSlider.js'
 import videoSlider from './_videoSlider.js'
 import headerPop from './_headerPopUp.js'
+import regTab from './registration.js'
+import option from './catalog.js'
+
 window.addEventListener('DOMContentLoaded', () => {
   const mainPage = document.querySelector('.mainPage')
   const shopPage = document.querySelector('.shopPage')
@@ -12,6 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const newsAndArticlesPage = document.querySelector('.newsAndArticlesPage')
   const itemInfoPage = document.querySelector('.itemPage')
   const orderingPage = document.querySelector('.orderingPage')
+  const regPage = document.querySelector('.registration-page')
 
   if (mainPage) {
     cardSlider()
@@ -87,6 +91,11 @@ window.addEventListener('DOMContentLoaded', () => {
         inputsToShow.classList.remove('active')
       })
     })
+  }
+
+  if (regPage) {
+    regTab()
+    option()
   }
   headerPop()
   burger()

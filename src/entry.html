@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Вход</title>
+        <link rel="stylesheet" href="styles/otherStyles/someStyles.css" />
+        <link rel="stylesheet" href="styles/main.min.css" />
+    </head>
+    <body class="entryPage">
+        <div class="wrapper">
+            @@include('./smallComponents/header.html')
+            <main class="main">
+                <div class="entry__container">
+                    <div class="card-position">
+                        <p class="text-card-left">Главная</p>
+                        <img
+                            src="img/newsAndArticles/right-arrow-grey.webp"
+                            alt="arrow"
+                            class="navigation__line"
+                        />
+                        <p>Вход</p>
+                    </div>
+                    <div class="entry-main">
+                        <h2 class="entry-main__title">
+                            Войти в личный кабинет
+                        </h2>
+                        <input
+                            type="email"
+                            placeholder="Email"
+                            checked
+                            class="entry-main__email"
+                        />
+                        <input
+                            type="password"
+                            placeholder="Пароль"
+                            checked
+                            class="entry-main__pass"
+                        />
+                        <a class="entry-main__1" href="waterrecovery.html">
+                            Забыли пароль?</a
+                        >
+                        <a class="entry-main__btn" href="address.html">Войти</a>
+                        <a class="entry-main__2" href="registration.html"
+                            >Регистрация</a
+                        >
+                    </div>
+                </div>
+                @@include("smallComponents/contacts.html",{
+                "class":"basket-contacts entry-contacts" })
+            </main>
+            @@include('smallComponents/footer.html', {"class" : "entry-footer"})
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <!-- Подключаем jQuery -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <!-- Подключаем файл JS скриптов -->
+        <script src="js/app.min.js"></script>
+    </body>
+</html>

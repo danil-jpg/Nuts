@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="styles/_someStyles.css" />
+    <link rel="stylesheet" href="styles/main.min.css" />
+  </head>
+  <body class="registration-page">
+    <div class="wrapper">
+      @@include("./smallComponents/header.html")
+      <main class="main">
+        <div class="main-registration__container">
+          <div class="card-position">
+            <p class="text-card-left">Главная</p>
+            <img
+              src="img/newsAndArticles/right-arrow-grey.webp"
+              alt="arrow"
+              class="navigation__line"
+            />
+            <p>Регистрация</p>
+          </div>
+
+          <div class="registration-main__contents">
+            <h2 class="registration-main-title">Регистрация</h2>
+            <p class="registration-main-text">1. Контактные данные</p>
+
+            <ul class="registration">
+              <li class="registration-list-1 active">
+                <h4 class="registration-inform">Физическое лицо</h4>
+
+                <div class="form-form-1">
+                  <form action="#" class="registration-form__min">
+                    <input
+                      type="text"
+                      placeholder="ФИО*"
+                      class="form__min-name"
+                      checked
+                    />
+                    <input
+                      type="email"
+                      placeholder="Email*"
+                      class="form__min-email"
+                      checked
+                    />
+                    <input
+                      type="tel"
+                      placeholder="Телефон*"
+                      class="form__min-tel"
+                      checked
+                    />
+
+                    <h6 class="form__min-title-add-1">2. Адрес</h6>
+                    <div class="custom-select option-form-1">
+                      <select>
+                        <option value="0">Страна</option>
+                        <option value="1">Украина</option>
+                        <option value="2">Польша</option>
+                        <option value="3">Латвия</option>
+                      </select>
+                    </div>
+                    <div class="custom-select option-form-2">
+                      <select>
+                        <option value="0">Область</option>
+                        <option value="1">Киевская</option>
+                        <option value="2">Люблинская</option>
+                        <option value="3">Латгальская</option>
+                      </select>
+                    </div>
+                    <input
+                      type="text"
+                      placeholder="Город*"
+                      checked
+                      class="form__min-city"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Адрес"
+                      class="form__min-addres"
+                    />
+
+                    <h6 class="form__min-title-add-2">3. Пароль</h6>
+
+                    <input
+                      type="password"
+                      placeholder="Пароль*"
+                      checked
+                      class="form__min-pass"
+                    />
+                    <input
+                      type="password"
+                      placeholder="Подтвердите пароль*"
+                      checked
+                      class="form__min-pass-rep"
+                    />
+
+                    <div class="agree">
+                      <div class="agree-border"></div>
+                      <p>Я согласен с <span>Условиями регистрации</span></p>
+                    </div>
+
+                    <button type="submit" class="btn-form-registration">
+                      Продолжить
+                    </button>
+                  </form>
+                  <div class="form-min__forms">
+                    <img src="img/joint/regist.webp" alt="#" />
+                    <ul class="form-min__forms-1">
+                      <li>
+                        <div class="form-fop-list">
+                          <div class="form-fop">
+                            <span></span>
+                            <p>Являюсь ФОП</p>
+                          </div>
+
+                          <form action="#" class="form-fop-inform">
+                            <h4 class="form-fop-inform__title-1">
+                              1. Реквизиты
+                            </h4>
+                            <input
+                              type="text"
+                              class="form-fop-inform__input-1"
+                              placeholder="ЕДРПО"
+                            />
+
+                            <h4 class="form-fop-inform__title-2">
+                              2. Адрес ФОП
+                            </h4>
+                            <div class="custom-select option-form-1">
+                              <select>
+                                <option value="0">Страна</option>
+                                <option value="1">Украина</option>
+                                <option value="2">Польша</option>
+                                <option value="3">Латвия</option>
+                              </select>
+                            </div>
+                            <div class="custom-select option-form-2">
+                              <select>
+                                <option value="0">Область</option>
+                                <option value="1">Киевская</option>
+                                <option value="2">Люблинская</option>
+                                <option value="3">Латгальская</option>
+                              </select>
+                            </div>
+                            <input
+                              type="text"
+                              placeholder="Город*"
+                              checked
+                              class="form__min-city"
+                            />
+                            <input
+                              type="text"
+                              placeholder="Адрес"
+                              class="form__min-addres"
+                            />
+                          </form>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="registration-list-2">
+                <h4 class="registration-inform">Юридическое лицо</h4>
+                <div class="form-form-2">
+                  <form action="#" class="registration-form__min">
+                    <input
+                      type="text"
+                      placeholder="ФИО*"
+                      class="form__min-name"
+                      checked
+                    />
+                    <input
+                      type="email"
+                      placeholder="Email*"
+                      class="form__min-email"
+                      checked
+                    />
+                    <input
+                      type="tel"
+                      placeholder="Телефон*"
+                      class="form__min-tel"
+                      checked
+                    />
+
+                    <h6 class="form__min-title-add-1">2. Адрес</h6>
+                    <div class="custom-select option-form-1">
+                      <select>
+                        <option value="0">Страна</option>
+                        <option value="1">Украина</option>
+                        <option value="2">Польша</option>
+                        <option value="3">Латвия</option>
+                      </select>
+                    </div>
+                    <div class="custom-select option-form-2">
+                      <select>
+                        <option value="0">Область</option>
+                        <option value="1">Киевская</option>
+                        <option value="2">Люблинская</option>
+                        <option value="3">Латгальская</option>
+                      </select>
+                    </div>
+                    <input
+                      type="text"
+                      placeholder="Город*"
+                      checked
+                      class="form__min-city"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Адрес"
+                      class="form__min-addres"
+                    />
+
+                    <h6 class="form__min-title-add-2">3. Пароль</h6>
+
+                    <input
+                      type="password"
+                      placeholder="Пароль*"
+                      checked
+                      class="form__min-pass"
+                    />
+                    <input
+                      type="password"
+                      placeholder="Подтвердите пароль*"
+                      checked
+                      class="form__min-pass-rep"
+                    />
+
+                    <div class="agree">
+                      <div class="agree-border"></div>
+                      <p>Я согласен с <span>Условиями регистрации</span></p>
+                    </div>
+
+                    <button type="submit" class="btn-form-registration">
+                      Продолжить
+                    </button>
+                  </form>
+                  <div class="form-min__forms">
+                    <img src="img/joint/regist.webp" alt="#" />
+                    <ul class="form-min__forms-1">
+                      <li class="form-min__forms-list-1">
+                        <div class="form-fop-list">
+                          <div class="form-fop form-fop-2">
+                            <span></span>
+                            <p>Юр. лицо</p>
+                          </div>
+
+                          <form action="#" class="form-fop-inform">
+                            <h4 class="form-fop-inform__title-1">
+                              1. Реквизиты
+                            </h4>
+                            <input
+                              type="text"
+                              class="form-fop-inform__input-1"
+                              placeholder="ОКПО"
+                            />
+
+                            <h4 class="form-fop-inform__title-2">
+                              2. Юридический адрес
+                            </h4>
+                            <div
+                              class="custom-select option-form-1 option-form-1__one"
+                            >
+                              <select>
+                                <option value="0">Страна</option>
+                                <option value="1">Украина</option>
+                                <option value="2">Польша</option>
+                                <option value="3">Латвия</option>
+                              </select>
+                            </div>
+                            <div
+                              class="custom-select option-form-2 option-form-1__two"
+                            >
+                              <select>
+                                <option value="0">Область</option>
+                                <option value="1">Киевская</option>
+                                <option value="2">Люблинская</option>
+                                <option value="3">Латгальская</option>
+                              </select>
+                            </div>
+                            <input
+                              type="text"
+                              placeholder="Город*"
+                              checked
+                              class="form__min-city form__min__city-1"
+                            />
+                            <input
+                              type="text"
+                              placeholder="Адрес"
+                              class="form__min-addres form__min__addres-1"
+                            />
+                            <input
+                              type="text"
+                              placeholder="Индекс"
+                              class="form__min-addres form__min__addres-2"
+                            />
+                          </form>
+                        </div>
+                      </li>
+                      <li class="form-min__forms-list-2">
+                        <div class="form-fop-list">
+                          <div class="form-fop form-fop-2">
+                            <span></span>
+                            <p>ФОП</p>
+                          </div>
+
+                          <form
+                            action="#"
+                            class="form-fop-inform form-fop-inform-2"
+                          >
+                            <h4 class="form-fop-inform__title-1">
+                              1. Реквизиты
+                            </h4>
+                            <input
+                              type="text"
+                              class="form-fop-inform__input-1 ffi__i-1"
+                              placeholder="ЕДРПО"
+                            />
+
+                            <h4 class="form-fop-inform__title-2 ffi_t-2">
+                              2. Адрес ФОП
+                            </h4>
+                            <div class="custom-select option-form-1 of-1">
+                              <select>
+                                <option value="0">Страна</option>
+                                <option value="1">Украина</option>
+                                <option value="2">Польша</option>
+                                <option value="3">Латвия</option>
+                              </select>
+                            </div>
+                            <div class="custom-select option-form-2 of-2">
+                              <select>
+                                <option value="0">Область</option>
+                                <option value="1">Киевская</option>
+                                <option value="2">Люблинская</option>
+                                <option value="3">Латгальская</option>
+                              </select>
+                            </div>
+                            <input
+                              type="text"
+                              placeholder="Город*"
+                              checked
+                              class="form__min-city f__mc"
+                            />
+                            <input
+                              type="text"
+                              placeholder="Адрес"
+                              class="form__min-addres f_md"
+                            />
+                          </form>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+      @@include('./smallComponents/footer.html')
+    </div>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

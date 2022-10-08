@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Восстановление Пароля</title>
+        <link rel="stylesheet" href="styles/otherStyles/someStyles.css" />
+        <link rel="stylesheet" href="styles/main.min.css" />
+    </head>
+<body class="waterrecoveryPage">
+<div class="wrapper">
+    @@include('./smallComponents/header.html')
+<main class="main">
+    <div class="waterrecovery__container">
+        <div class="card-position">
+            <p class="text-card-left">Главная</p>
+
+            <p>Восстановление пароля</p>
+        </div>
+
+        <div class="water-recovery-main">
+            <h2 class="water-recovery-main__title">Восстановление пароля</h2>
+            <p class="water-recovery-main__text-1">Забыли пароль?</p>
+            <p class="water-recovery-main__text-2">Введите Email Вашего аккаунта, Вам будет выслана <br> ссылка для восстановления пароля.</p>
+            <input type="email" placeholder="Email*" checked class="water-recovery-main__email">
+            <a href="#" class="water-recovery-main__btn-1">Отправить ссылку</a>
+            <p class="water-recovery-main__text-3">Восстановление пароля</p>
+            <p class="water-recovery-main__text-4">Введите новый пароль для Email <span>example@gmail.com</span></p>
+            <input type="password" checked placeholder="Новый пароль*" class="water-recovery-main__pass">
+            <input type="password" checked placeholder="Подтвердите новый пароль*" class="water-recovery-main__new-pass">
+            <a class="water-recovery-main__btn" href="entry.html">Сменить пароль</a>
+        </div>
+    </div>
+
+</main>
+@@include("smallComponents/contacts.html",{
+    "class":"basket-contacts waterrecovery-contacts" })
+</main>
+@@include('smallComponents/footer.html', {"class" : "waterrecovery-footer"})
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<!-- Подключаем jQuery -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<!-- Подключаем файл JS скриптов -->
+<script src="js/app.min.js"></script>
+</body>
+</html>

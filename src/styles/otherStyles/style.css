@@ -7712,9 +7712,9 @@ input.radio-input:checked::before {
 .contacts {
     display: none;
 }
-.privatePage .reg-footer {
+/* .privatePage .reg-footer . {
     margin-top: 106px;
-}
+} */
 
 @media screen and (max-width: 1919px) {
     .header__none_1439 {
@@ -7730,8 +7730,8 @@ input.radio-input:checked::before {
         display: none;
     }
 }
-@media screen and (max-width: 1439px) {
-}
+/* @media screen and (max-width: 1439px) {
+} */
 
 @media screen and (max-width: 767px) {
     .registration-list-1 {

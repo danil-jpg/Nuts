@@ -7712,6 +7712,13 @@ input.radio-input:checked::before {
 .contacts {
     display: none;
 }
+.select-selected::after {
+    content: "";
+    background-image: url(../../img/joint/arrow-down-green.svg);
+    background-repeat: no-repeat;
+    right: 13px;
+    width: 18px;
+}
 /* .privatePage .reg-footer . {
     margin-top: 106px;
 } */
